@@ -1,0 +1,15 @@
+body{
+    color : red
+}
+
+#menu_list{
+    display : flex;
+    flex-direction : row;
+    list-style-type: none;
+}
+
+#latest_list{
+    list-style-type: none;
+    display : flex;
+    flex-direction : row;
+}
