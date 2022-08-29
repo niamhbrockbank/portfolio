@@ -9,6 +9,14 @@ body {
     sans-serif;
   color: #41423e;
   background-color: #f9f9f5;
+  margin: 10px 30px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: medium;
+  padding: 20px 0 0 0px;
 }
 
 #menu_bar {
@@ -16,9 +24,10 @@ body {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding: 0px;
+  padding: 0px 0px 20px;
   align-items: baseline;
   justify-content: space-between;
+  font-size: medium;
 }
 
 #menu_list {
@@ -30,8 +39,8 @@ body {
 
 #menu_name {
   margin: 0px;
-  font-size: 24px;
-  padding: 0 50px 0 0;
+  font-size: 20px;
+  padding: 0 50px 0 0px;
   flex-wrap: nowrap;
 }
 
@@ -42,6 +51,16 @@ body {
 
 .menu_list_option:hover {
   border-bottom: 1.5px solid #41423e;
+}
+
+#intro_section {
+  margin: 0 0 30px 0;
+}
+
+#intro {
+  font-size: 40px;
+  width: 70vw;
+  margin: 0px;
 }
 
 #latest_list {
