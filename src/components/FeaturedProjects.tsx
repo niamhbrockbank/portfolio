@@ -1,7 +1,7 @@
 export default function FeaturedProjects(): JSX.Element {
   return (
     <>
-      <h1>featured</h1>
+      <h1 id="featured_title">featured</h1>
       <ul id="featured_list">
         <li className="featured_project">project one</li>
         <li className="featured_project">project two</li>
