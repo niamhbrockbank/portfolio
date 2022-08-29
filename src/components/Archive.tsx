@@ -1,7 +1,7 @@
 export default function Archive(): JSX.Element {
   return (
     <>
-      <h1>Archive</h1>
+      <h1 id='archive_title'>Archive</h1>
       <ul id="archive_list">
         <li className="archive_project">archive 1</li>
         <li className="archive_project">archive 2</li>
