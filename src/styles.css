@@ -71,7 +71,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 22vw);
   justify-content: space-between;
-  column-gap : 1vw;
+  column-gap: 1vw;
 }
 
 .featured_project {
@@ -86,7 +86,7 @@ h1 {
   padding-left: 0px;
   display: grid;
   grid-template-columns: 45vw 45vw;
-  column-gap : 2vw;
+  column-gap: 2vw;
   row-gap: 25px;
   justify-content: space-between;
 }
