@@ -1,7 +1,6 @@
-import Archive from "./components/Archive";
 import Footer from "./components/Footer";
 import IntroSection from "./components/IntroSection";
-import LatestSection from "./components/LatestSection";
+import ProjectsSection from "./components/ProjectsSection";
 import MenuBar from "./components/MenuBar";
 import "./styles.css";
 
@@ -10,8 +9,7 @@ function App(): JSX.Element {
     <>
       <MenuBar />
       <IntroSection />
-      <LatestSection />
-      <Archive />
+      <ProjectsSection />
       <Footer />
     </>
   );

@@ -1,7 +1,9 @@
 /*
 colour palette
 #686963 dim gray
-#f9f9f5 (off-white)
+
+#f9f9f5 background-colour (off-white)
+#41423e body text colours (dark grey)
 */
 
 body {
@@ -63,8 +65,34 @@ h1 {
   margin: 0px;
 }
 
-#latest_list {
+#featured_list {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 22vw);
+  justify-content: space-between;
+}
+
+.featured_project {
+  border: 1.5px solid #c4c4c0;
+  border-radius: 10px;
+  padding: 10px;
+  height: 120px;
+}
+
+#archive_list {
+  list-style-type: none;
+  padding-left: 0px;
+  display: grid;
+  grid-template-columns: 46vw 46vw;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.archive_project {
+  border: 2px solid red;
+  height: 150px;
+  border: 1.5px solid #41423e;
+  border-radius: 7px;
+  padding: 10px;
 }
