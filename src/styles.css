@@ -10,10 +10,37 @@ body{
     background-color: #f9f9f5;
 }
 
-#menu_list{
-    display : flex;
-    flex-direction : row;
+#menu_bar{
+    padding: 5px 0px;
+    display:flex;
+    flex-direction: row;
     list-style-type: none;
+    padding: 0px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#menu_list{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#menu_name{
+    margin: 0px;
+    font-size: 24px;
+    padding: 0 50px 0 0;
+    flex-wrap: nowrap;
+}
+
+.menu_list_option{
+    text-align: center;
+    padding : 0px;
+}
+
+.menu_list_option:hover{
+    border-bottom: 1.5px solid #41423e;
 }
 
 #latest_list{
