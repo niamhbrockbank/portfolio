@@ -96,3 +96,29 @@ h1 {
   border-radius: 7px;
   padding: 10px;
 }
+
+#footer_section{
+    margin-top: 40px;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap:150px;
+    margin-right : 100px
+}
+
+#footer_navigation_list{
+    list-style-type: none;
+    padding-left:0
+}
+
+#social_media_list{
+    list-style-type: none;
+    padding-left:0;
+}
+
+#contact_title{
+    text-transform: uppercase;
+}
