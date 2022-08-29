@@ -73,26 +73,26 @@ h1 {
   justify-content: space-between;
 }
 
-.featured_project{
-    border: 1.5px solid #c4c4c0;
-    border-radius: 10px;
-    padding : 10px;
-    height : 120px
+.featured_project {
+  border: 1.5px solid #c4c4c0;
+  border-radius: 10px;
+  padding: 10px;
+  height: 120px;
 }
 
-#archive_list{
+#archive_list {
   list-style-type: none;
   padding-left: 0px;
   display: grid;
   grid-template-columns: 46vw 46vw;
-  gap : 25px;
+  gap: 25px;
   justify-content: space-between;
 }
 
-.archive_project{
-    border : 2px solid red;
-    height : 150px;
-    border: 1.5px solid #41423e;
-    border-radius: 7px;
-    padding: 10px
+.archive_project {
+  border: 2px solid red;
+  height: 150px;
+  border: 1.5px solid #41423e;
+  border-radius: 7px;
+  padding: 10px;
 }
