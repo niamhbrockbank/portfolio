@@ -100,6 +100,17 @@ a {
   border-radius: 10px;
   padding: 10px;
   height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.archive_project_title{
+    margin : 0px
+}
+
+.archive_project_description{
+    margin : 0px
 }
 
 #footer_section {
