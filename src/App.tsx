@@ -1,4 +1,3 @@
-import Archive from "./components/Archive";
 import Footer from "./components/Footer";
 import IntroSection from "./components/IntroSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -11,7 +10,6 @@ function App(): JSX.Element {
       <MenuBar />
       <IntroSection />
       <ProjectsSection />
-      <Archive />
       <Footer />
     </>
   );
