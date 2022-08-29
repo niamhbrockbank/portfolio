@@ -5,9 +5,15 @@ export default function Footer(): JSX.Element {
         <hr />
         <nav id="footer">
           <ul id="footer_navigation_list">
-            <li><a href='#featured_title'>Featured</a></li>
-            <li><a href='#archive_title'>Archive</a></li>
-            <li><a href ='#contact_title'>Info</a></li>
+            <li>
+              <a href="#featured_title">Featured</a>
+            </li>
+            <li>
+              <a href="#archive_title">Archive</a>
+            </li>
+            <li>
+              <a href="#contact_title">Info</a>
+            </li>
           </ul>
           <ul id="social_media_list">
             <li id="contact_title">Contact</li>
