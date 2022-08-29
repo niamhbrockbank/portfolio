@@ -71,6 +71,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 22vw);
   justify-content: space-between;
+  column-gap: 1vw;
 }
 
 .featured_project {
@@ -84,15 +85,41 @@ h1 {
   list-style-type: none;
   padding-left: 0px;
   display: grid;
-  grid-template-columns: 46vw 46vw;
-  gap: 25px;
+  grid-template-columns: 45vw 45vw;
+  column-gap: 2vw;
+  row-gap: 25px;
   justify-content: space-between;
 }
 
 .archive_project {
-  border: 2px solid red;
-  height: 150px;
   border: 1.5px solid #41423e;
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 10px;
+  height: 180px;
+}
+
+#footer_section {
+  margin-top: 40px;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 150px;
+  margin-right: 100px;
+}
+
+#footer_navigation_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#social_media_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contact_title {
+  text-transform: uppercase;
 }
