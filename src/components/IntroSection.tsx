@@ -1,8 +1,10 @@
 export default function IntroSection(): JSX.Element {
   return (
     <>
-      <h1>Intro section</h1>
-      <p>These are details about me.</p>
+      <div id='intro_section'>
+        <h1>Intro</h1>
+        <p id='intro'>Junior Software Developer pursuing creative and beautiful solutions to big problems.</p>
+      </div>
     </>
   );
 }
