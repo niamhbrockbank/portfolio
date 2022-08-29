@@ -13,7 +13,7 @@ export default function Archive(): JSX.Element {
     {
       name: "tv show picker",
       description:
-        "front-end app that fetches tv show data from an API and can navigate between shows with a dropdown",
+        "front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
       image: "no image yet",
       github_link: "https://github.com/Wilrosmi/tv-shows",
     },
@@ -40,7 +40,11 @@ export default function Archive(): JSX.Element {
             >
               {project.name.toLowerCase()}
             </h2>
-            <p className="archive_project_description">{project.description}</p>
+            <p className="archive_project_description">
+              {project.description.length < 140
+                ? project.description
+                : `${project.description.slice(0, 137)}...`}
+            </p>
           </li>
         ))}
       </ul>
