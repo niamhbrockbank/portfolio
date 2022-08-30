@@ -1,6 +1,5 @@
-import { Project } from "../types";
 import goToGitHubRepo from "../utils/goToGitHubRepo";
-import archiveProjects from './archiveProjects.json'
+import archiveProjects from "./archiveProjects.json";
 
 export default function Archive(): JSX.Element {
   return (
