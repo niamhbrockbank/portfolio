@@ -19,9 +19,9 @@ export default function Archive(): JSX.Element {
                 {project.name.toLowerCase()}
               </h2>
               <p className="archive_project_description">
-                {project.description.length < 140
+                {project.description.length < 100
                   ? project.description
-                  : `${project.description.slice(0, 137)}...`}
+                  : `${project.description.slice(0, 97)}...`}
               </p>
             </div>
           </li>
