@@ -103,20 +103,21 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   /* background-image: url('./images/to-do-app.png'); */
-  background-size:cover;
+  background-size: cover;
   background-color: #f9f9f5;
 }
 
-#archive_project_details{
+#archive_project_details {
   display: flexbox;
   background-color: #41423e;
   color: whitesmoke;
-  margin : 0px;
-  padding : 5px;
+  margin: 0px;
+  padding: 5px;
   border-radius: 0px 0px 7px 7px;
 }
 
-.archive_project_title, .archive_project_description {
+.archive_project_title,
+.archive_project_description {
   margin: 0px;
 }
 

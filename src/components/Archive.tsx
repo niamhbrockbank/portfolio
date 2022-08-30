@@ -12,7 +12,7 @@ export default function Archive(): JSX.Element {
             key={archiveProjects.indexOf(project)}
             style={{ backgroundImage: `url(${project.image})` }}
           >
-            <div id='archive_project_details'>
+            <div id="archive_project_details">
               <h2
                 className="archive_project_title"
                 onClick={() => goToGitHubRepo(project)}
