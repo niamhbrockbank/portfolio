@@ -16,7 +16,7 @@ export default function Footer(): JSX.Element {
             </li>
           </ul>
           <ul id="social_media_list">
-            <li id="contact_title">Contact</li>
+            <li id="contact_title">Find me on the internet</li>
             <li>
               <a href="https://www.linkedin.com/in/niamh-brockbank/">
                 Linkedin
@@ -24,6 +24,11 @@ export default function Footer(): JSX.Element {
             </li>
             <li>
               <a href="https://github.com/niamhbrockbank">GitHub</a>
+            </li>
+            <li>
+              <a href="https://openprocessing.org/user/334108?view=activity&o=2">
+                OpenProcessing
+              </a>
             </li>
           </ul>
         </nav>

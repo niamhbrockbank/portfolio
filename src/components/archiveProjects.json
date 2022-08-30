@@ -1,0 +1,32 @@
+[
+  {
+    "name": "to-do app",
+    "description": "full-stack app that allows a user to insert and delete tasks.",
+    "image": "no image yet",
+    "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end"
+  },
+  {
+    "name": "tv show picker",
+    "description": "front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
+    "image": "no image yet",
+    "github_link": "https://github.com/Wilrosmi/tv-shows"
+  },
+  {
+    "name": "baby names picker",
+    "description": "front-end app that can be used to choose baby names",
+    "image": "no image yet",
+    "github_link": "https://github.com/niamhbrockbank/baby-names-react"
+  },
+  {
+    "name": "perlin noise - clouds",
+    "description": "perlin noise experiment using p5.js. Emulates moving clouds.",
+    "image": "no image yet",
+    "github_link": "https://openprocessing.org/sketch/1622568"
+  },
+  {
+    "name": "perlin noise - overlapping patterns",
+    "description": "perlin noise experiment using p5.js.",
+    "image": "no image yet",
+    "github_link": "https://openprocessing.org/sketch/1633837"
+  }
+]

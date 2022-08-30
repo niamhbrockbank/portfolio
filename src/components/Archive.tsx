@@ -1,30 +1,7 @@
-import { Project } from "../types";
 import goToGitHubRepo from "../utils/goToGitHubRepo";
+import archiveProjects from "./archiveProjects.json";
 
 export default function Archive(): JSX.Element {
-  const archiveProjects: Project[] = [
-    {
-      name: "to-do app",
-      description:
-        "full-stack app that allows a user to insert and delete tasks.",
-      image: "no image yet",
-      github_link: "https://github.com/niamhbrockbank/to-do-app-front-end",
-    },
-    {
-      name: "tv show picker",
-      description:
-        "front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
-      image: "no image yet",
-      github_link: "https://github.com/Wilrosmi/tv-shows",
-    },
-    {
-      name: "baby names picker",
-      description: "front-end app that can be used to choose baby names",
-      image: "no image yet",
-      github_link: "https://github.com/niamhbrockbank/baby-names-react",
-    },
-  ];
-
   return (
     <>
       <h1 id="archive_title">Archive</h1>
