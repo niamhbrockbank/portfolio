@@ -18,15 +18,15 @@
     "github_link": "https://github.com/niamhbrockbank/baby-names-react"
   },
   {
-    "name" : "perlin noise - clouds",
-    "description" : "perlin noise experiment using p5.js. Emulates moving clouds.",
-    "image" : "no image yet",
-    "github_link" : "https://openprocessing.org/sketch/1622568"
+    "name": "perlin noise - clouds",
+    "description": "perlin noise experiment using p5.js. Emulates moving clouds.",
+    "image": "no image yet",
+    "github_link": "https://openprocessing.org/sketch/1622568"
   },
   {
-    "name" : "perlin noise - overlapping patterns",
-    "description" : "perlin noise experiment using p5.js.",
-    "image" : "no image yet",
-    "github_link" : "https://openprocessing.org/sketch/1633837"
+    "name": "perlin noise - overlapping patterns",
+    "description": "perlin noise experiment using p5.js.",
+    "image": "no image yet",
+    "github_link": "https://openprocessing.org/sketch/1633837"
   }
 ]

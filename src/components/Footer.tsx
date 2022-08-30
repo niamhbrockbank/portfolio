@@ -26,7 +26,9 @@ export default function Footer(): JSX.Element {
               <a href="https://github.com/niamhbrockbank">GitHub</a>
             </li>
             <li>
-              <a href="https://openprocessing.org/user/334108?view=activity&o=2">OpenProcessing</a>
+              <a href="https://openprocessing.org/user/334108?view=activity&o=2">
+                OpenProcessing
+              </a>
             </li>
           </ul>
         </nav>
