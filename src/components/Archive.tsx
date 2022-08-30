@@ -11,17 +11,19 @@ export default function Archive(): JSX.Element {
             className="archive_project"
             key={archiveProjects.indexOf(project)}
           >
-            <h2
-              className="archive_project_title"
-              onClick={() => goToGitHubRepo(project)}
-            >
-              {project.name.toLowerCase()}
-            </h2>
-            <p className="archive_project_description">
-              {project.description.length < 140
-                ? project.description
-                : `${project.description.slice(0, 137)}...`}
-            </p>
+            <div id='archive_project_details'>
+              <h2
+                className="archive_project_title"
+                onClick={() => goToGitHubRepo(project)}
+              >
+                {project.name.toLowerCase()}
+              </h2>
+              <p className="archive_project_description">
+                {project.description.length < 140
+                  ? project.description
+                  : `${project.description.slice(0, 137)}...`}
+              </p>
+            </div>
           </li>
         ))}
       </ul>
