@@ -96,7 +96,7 @@ a {
 }
 
 .archive_project {
-  border: 1.5px solid #41423e;
+  border: 2px solid #41423e;
   border-radius: 10px;
   height: 180px;
   display: flex;
@@ -108,10 +108,12 @@ a {
 }
 
 #archive_project_details{
-  background-color: #f9f9f5;
+  display: flexbox;
+  background-color: #41423e;
+  color: whitesmoke;
   margin : 0px;
   padding : 5px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 7px 7px;
 }
 
 .archive_project_title, .archive_project_description {
