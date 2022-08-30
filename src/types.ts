@@ -3,4 +3,5 @@ export interface Project {
   description: string;
   image: string;
   github_link: string;
+  deployed_link?: string;
 }

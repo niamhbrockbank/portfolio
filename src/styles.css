@@ -96,19 +96,27 @@ a {
 }
 
 .archive_project {
-  border: 1.5px solid #41423e;
+  border: 2px solid #41423e;
   border-radius: 10px;
-  padding: 10px;
-  height: 180px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
+  /* background-image: url('./images/to-do-app.png'); */
+  background-size: cover;
+  background-color: #f9f9f5;
 }
 
-.archive_project_title {
+#archive_project_details {
+  display: flexbox;
+  background-color: #41423e;
+  color: whitesmoke;
   margin: 0px;
+  padding: 5px;
+  border-radius: 0px 0px 7px 7px;
 }
 
+.archive_project_title,
 .archive_project_description {
   margin: 0px;
 }

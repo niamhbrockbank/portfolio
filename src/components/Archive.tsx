@@ -10,18 +10,21 @@ export default function Archive(): JSX.Element {
           <li
             className="archive_project"
             key={archiveProjects.indexOf(project)}
+            style={{ backgroundImage: `url(${project.image})` }}
           >
-            <h2
-              className="archive_project_title"
-              onClick={() => goToGitHubRepo(project)}
-            >
-              {project.name.toLowerCase()}
-            </h2>
-            <p className="archive_project_description">
-              {project.description.length < 140
-                ? project.description
-                : `${project.description.slice(0, 137)}...`}
-            </p>
+            <div id="archive_project_details">
+              <h2
+                className="archive_project_title"
+                onClick={() => goToGitHubRepo(project)}
+              >
+                {project.name.toLowerCase()}
+              </h2>
+              <p className="archive_project_description">
+                {project.description.length < 100
+                  ? project.description
+                  : `${project.description.slice(0, 97)}...`}
+              </p>
+            </div>
           </li>
         ))}
       </ul>
