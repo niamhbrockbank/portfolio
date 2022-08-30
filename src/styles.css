@@ -102,7 +102,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url('./images/to-do-app.png');
+  /* background-image: url('./images/to-do-app.png'); */
   background-size:cover;
   background-color: #f9f9f5;
 }

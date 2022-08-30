@@ -10,6 +10,7 @@ export default function Archive(): JSX.Element {
           <li
             className="archive_project"
             key={archiveProjects.indexOf(project)}
+            style={{ backgroundImage: `url(${project.image})` }}
           >
             <div id='archive_project_details'>
               <h2
