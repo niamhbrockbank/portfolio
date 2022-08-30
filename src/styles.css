@@ -98,7 +98,7 @@ a {
 .archive_project {
   border: 2px solid #41423e;
   border-radius: 10px;
-  height: 180px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

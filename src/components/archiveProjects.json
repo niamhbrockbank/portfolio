@@ -3,7 +3,8 @@
     "name": "to-do app",
     "description": "full-stack app that allows a user to insert and delete tasks.",
     "image": "/img/to-do-app.png",
-    "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end"
+    "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end",
+    "deployed_link" : "https://to-do-app-nb.netlify.app/" 
   },
   {
     "name": "tv show picker",
@@ -15,7 +16,8 @@
     "name": "baby names picker",
     "description": "front-end app that can be used to choose baby names",
     "image": "/img/baby-names.png",
-    "github_link": "https://github.com/niamhbrockbank/baby-names-react"
+    "github_link": "https://github.com/niamhbrockbank/baby-names-react",
+    "deployed_link" : "https://baby-names-nb.netlify.app/"
   },
   {
     "name": "perlin noise - clouds",
