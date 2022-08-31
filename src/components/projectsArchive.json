@@ -2,7 +2,7 @@
   {
     "name": "to-do app",
     "description": "full-stack app that allows a user to insert and delete tasks.",
-    "image": "/img/to-do-app.png",
+    "image": "no image yet",
     "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end",
     "deployed_link": "https://to-do-app-nb.netlify.app/",
     "featured": false
@@ -37,5 +37,21 @@
     "github_link": "https://openprocessing.org/sketch/1633837",
     "deployed_link": "https://openprocessing.org/sketch/1633837",
     "featured": false
+  },
+  {
+    "name" : "promises and async await",
+    "description" : "presentation on the use of promises and the async and await keywords in JavaScript.",
+    "image" : "no image yet",
+    "github_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
+    "deployed_link" : "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
+    "featured" : false
+  },
+  {
+    "name" : "recursion",
+    "description" : "presentation on the use of recursion.",
+    "image" : "no image yet",
+    "github_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
+    "deployed_link" : "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
+    "featured" : false
   }
 ]
