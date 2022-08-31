@@ -1,5 +1,6 @@
 import { Project } from "../types";
 import createPlaceholderFeats from "../utils/createPlaceholderFeats";
+import goToGitHubRepo from "../utils/goToGitHubRepo";
 
 interface FeaturedProjectsProps {
   projectsArchive: Project[];
@@ -18,7 +19,10 @@ export default function FeaturedProjects({
       <h1 id="featured_title">featured</h1>
       <ul id="featured_list">
         {featProjToShow.map((proj) => (
-          <li className="featured_project" key="projectsArchive.indexOf(proj)">
+          <li 
+            className="featured_project" 
+            key="projectsArchive.indexOf(proj)"
+            onClick={() => goToGitHubRepo(proj)}>
             {proj.name}
           </li>
         ))}
