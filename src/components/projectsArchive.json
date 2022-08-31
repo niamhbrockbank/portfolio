@@ -17,7 +17,7 @@
   {
     "name": "baby names picker",
     "description": "front-end app that can be used to choose baby names",
-    "image": "/img/baby-names.png",
+    "image": "no image yet",
     "github_link": "https://github.com/niamhbrockbank/baby-names-react",
     "deployed_link": "https://baby-names-nb.netlify.app/",
     "featured": false
@@ -39,19 +39,19 @@
     "featured": false
   },
   {
-    "name" : "promises and async await",
-    "description" : "presentation on the use of promises and the async and await keywords in JavaScript.",
-    "image" : "no image yet",
+    "name": "promises and async await",
+    "description": "presentation on the use of promises and the async and await keywords in JavaScript.",
+    "image": "no image yet",
     "github_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
-    "deployed_link" : "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
-    "featured" : false
+    "deployed_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
+    "featured": false
   },
   {
-    "name" : "recursion",
-    "description" : "presentation on the use of recursion.",
-    "image" : "no image yet",
+    "name": "recursion",
+    "description": "presentation on the use of recursion.",
+    "image": "no image yet",
     "github_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
-    "deployed_link" : "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
-    "featured" : false
+    "deployed_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
+    "featured": false
   }
 ]
