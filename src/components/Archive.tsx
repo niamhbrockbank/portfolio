@@ -1,15 +1,21 @@
+import { Project } from "../types";
 import goToGitHubRepo from "../utils/goToGitHubRepo";
-import archiveProjects from "./archiveProjects.json";
 
-export default function Archive(): JSX.Element {
+interface ArchiveProps {
+  projectsArchive: Project[];
+}
+
+export default function Archive({
+  projectsArchive,
+}: ArchiveProps): JSX.Element {
   return (
     <>
       <h1 id="archive_title">Archive</h1>
       <ul id="archive_list">
-        {archiveProjects.map((project) => (
+        {projectsArchive.map((project) => (
           <li
             className="archive_project"
-            key={archiveProjects.indexOf(project)}
+            key={projectsArchive.indexOf(project)}
             style={{ backgroundImage: `url(${project.image})` }}
           >
             <div id="archive_project_details">
