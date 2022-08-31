@@ -13,6 +13,11 @@ export default function MenuBar(): JSX.Element {
           <li className="menu_list_option">
             <a href="#contact_title">INFO</a>
           </li>
+          <li className="menu_list_option">
+            <a href="./Brockbank_Niamh_CV_220824.pdf" target="_blank">
+              CV
+            </a>
+          </li>
         </div>
       </ul>
     </>
