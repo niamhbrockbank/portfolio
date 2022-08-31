@@ -6,8 +6,9 @@ export default function MenuBar({ setCurrentPage }: MenuBarProps): JSX.Element {
   return (
     <>
       <ul id="menu_bar">
-        <li id="menu_name"
-            onClick={() => setCurrentPage("homepage")}>Niamh Brockbank</li>
+        <li id="menu_name" onClick={() => setCurrentPage("homepage")}>
+          Niamh Brockbank
+        </li>
         <div id="menu_list">
           <li className="menu_list_option">
             <a href="#featured_title">FEATURED</a>

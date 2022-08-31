@@ -1,7 +1,10 @@
 import { Project } from "../types";
 
-export default function goToDeployedProject(project: Project, setCurrentPage : React.Dispatch<React.SetStateAction<string>>): void {
-  setCurrentPage(project.name)
+export default function goToDeployedProject(
+  project: Project,
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>
+): void {
+  setCurrentPage(project.name);
 
   if (project.deployed_link) {
     window.open(project.deployed_link, "_blank");

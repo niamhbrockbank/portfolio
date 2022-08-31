@@ -8,22 +8,21 @@ import ProjectPage from "./components/ProjectPage";
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState("homepage");
-  
+
   return (
     <>
-    <MenuBar setCurrentPage={setCurrentPage} />
-      {currentPage === "homepage" ?
+      <MenuBar setCurrentPage={setCurrentPage} />
+      {currentPage === "homepage" ? (
         <>
           <IntroSection />
           <ProjectsSection setCurrentPage={setCurrentPage} />
         </>
-        :
+      ) : (
         <>
-          <ProjectPage currentPage={currentPage}/>
+          <ProjectPage currentPage={currentPage} />
         </>
-      }
-    <Footer setCurrentPage={setCurrentPage} />
-      
+      )}
+      <Footer setCurrentPage={setCurrentPage} />
     </>
   );
 }
