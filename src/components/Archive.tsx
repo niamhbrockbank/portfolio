@@ -1,6 +1,4 @@
 import { Project } from "../types";
-import goToDeployedProject from "../utils/goToDeployedProject";
-import goToGitHubRepo from "../utils/goToGitHubRepo";
 
 interface ArchiveProps {
   projectsArchive: Project[];
@@ -20,13 +18,10 @@ export default function Archive({
             className="archive_project"
             key={projectsArchive.indexOf(project)}
             style={{ backgroundImage: `url(${project.image})` }}
-            onClick={() => goToDeployedProject(project, setCurrentPage)}
+            onClick={() => setCurrentPage(project.name)}
           >
             <div id="archive_project_details">
-              <h2
-                className="archive_project_title"
-                onClick={() => goToGitHubRepo(project)}
-              >
+              <h2 className="archive_project_title">
                 {project.name.toLowerCase()}
               </h2>
               <p className="archive_project_description">
