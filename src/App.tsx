@@ -7,13 +7,18 @@ import { useState } from "react";
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState("homepage");
-
+  console.log(currentPage)
   return (
     <>
-      <MenuBar setCurrentPage={setCurrentPage} />
-      <IntroSection />
-      <ProjectsSection setCurrentPage={setCurrentPage} />
-      <Footer setCurrentPage={setCurrentPage} />
+    <MenuBar setCurrentPage={setCurrentPage} />
+      {currentPage === "homepage" &&
+        <>
+          <IntroSection />
+          <ProjectsSection setCurrentPage={setCurrentPage} />
+          <Footer setCurrentPage={setCurrentPage} />
+        </>
+      }
+      
     </>
   );
 }

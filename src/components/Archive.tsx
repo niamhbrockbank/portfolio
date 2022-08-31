@@ -20,7 +20,7 @@ export default function Archive({
             className="archive_project"
             key={projectsArchive.indexOf(project)}
             style={{ backgroundImage: `url(${project.image})` }}
-            onClick={() => goToDeployedProject(project)}
+            onClick={() => goToDeployedProject(project, setCurrentPage)}
           >
             <div id="archive_project_details">
               <h2
