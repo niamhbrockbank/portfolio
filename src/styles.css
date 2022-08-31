@@ -81,6 +81,10 @@ a {
   margin: 0px;
 }
 
+#featured_title{
+  scroll-margin-top: 70px
+}
+
 #featured_list {
   list-style-type: none;
   padding-left: 0px;
@@ -98,6 +102,10 @@ a {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+}
+
+#archive_title{
+  scroll-margin-top: 70px
 }
 
 #archive_list {
