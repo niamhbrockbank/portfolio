@@ -1,4 +1,8 @@
-export default function MenuBar(): JSX.Element {
+interface MenuBarProps {
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export default function MenuBar({ setCurrentPage }: MenuBarProps): JSX.Element {
   return (
     <>
       <ul id="menu_bar">

@@ -4,10 +4,12 @@ import goToGitHubRepo from "../utils/goToGitHubRepo";
 
 interface ArchiveProps {
   projectsArchive: Project[];
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export default function Archive({
   projectsArchive,
+  setCurrentPage,
 }: ArchiveProps): JSX.Element {
   return (
     <>

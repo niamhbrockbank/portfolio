@@ -2,11 +2,20 @@ import Archive from "./Archive";
 import FeaturedProjects from "./FeaturedProjects";
 import projectsArchive from "./projectsArchive.json";
 
-export default function ProjectsSection(): JSX.Element {
+interface ProjectsSectionProps {
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export default function ProjectsSection({
+  setCurrentPage,
+}: ProjectsSectionProps): JSX.Element {
   return (
     <>
       <FeaturedProjects projectsArchive={projectsArchive} />
-      <Archive projectsArchive={projectsArchive} />
+      <Archive
+        projectsArchive={projectsArchive}
+        setCurrentPage={setCurrentPage}
+      />
     </>
   );
 }
