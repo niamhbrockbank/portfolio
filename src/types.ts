@@ -4,5 +4,5 @@ export interface Project {
   image: string;
   github_link: string;
   deployed_link?: string;
-  featured?:boolean
+  featured?: boolean;
 }

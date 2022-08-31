@@ -5,8 +5,8 @@ import projectsArchive from "./archiveProjects.json";
 export default function ProjectsSection(): JSX.Element {
   return (
     <>
-      <FeaturedProjects projectsArchive= {projectsArchive}/>
-      <Archive projectsArchive= {projectsArchive}/>
+      <FeaturedProjects projectsArchive={projectsArchive} />
+      <Archive projectsArchive={projectsArchive} />
     </>
   );
 }

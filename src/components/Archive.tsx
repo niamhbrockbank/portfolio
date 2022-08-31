@@ -1,11 +1,13 @@
 import { Project } from "../types";
 import goToGitHubRepo from "../utils/goToGitHubRepo";
 
-interface ArchiveProps{
-  projectsArchive : Project[]
+interface ArchiveProps {
+  projectsArchive: Project[];
 }
 
-export default function Archive({projectsArchive} : ArchiveProps): JSX.Element {
+export default function Archive({
+  projectsArchive,
+}: ArchiveProps): JSX.Element {
   return (
     <>
       <h1 id="archive_title">Archive</h1>
