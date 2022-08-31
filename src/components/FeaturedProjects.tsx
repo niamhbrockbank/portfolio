@@ -19,10 +19,11 @@ export default function FeaturedProjects({
       <h1 id="featured_title">featured</h1>
       <ul id="featured_list">
         {featProjToShow.map((proj) => (
-          <li 
-            className="featured_project" 
+          <li
+            className="featured_project"
             key="projectsArchive.indexOf(proj)"
-            onClick={() => goToGitHubRepo(proj)}>
+            onClick={() => goToGitHubRepo(proj)}
+          >
             {proj.name}
           </li>
         ))}
