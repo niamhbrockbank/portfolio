@@ -1,4 +1,8 @@
-export default function Footer(): JSX.Element {
+interface FooterProps {
+  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export default function Footer({ setCurrentPage }: FooterProps): JSX.Element {
   return (
     <>
       <div id="footer_section">
