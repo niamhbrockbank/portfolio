@@ -27,6 +27,7 @@
     "description": "perlin noise experiment using p5.js. Emulates moving clouds.",
     "image": "/img/clouds.png",
     "github_link": "https://openprocessing.org/sketch/1622568",
+    "deployed_link": "https://openprocessing.org/sketch/1622568",
     "featured": true
   },
   {
@@ -34,6 +35,7 @@
     "description": "perlin noise experiment using p5.js.",
     "image": "/img/overlapping-perlin-noise.png",
     "github_link": "https://openprocessing.org/sketch/1633837",
+    "deployed_link": "https://openprocessing.org/sketch/1633837",
     "featured": false
   }
 ]
