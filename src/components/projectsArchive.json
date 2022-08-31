@@ -5,14 +5,14 @@
     "image": "/img/to-do-app.png",
     "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end",
     "deployed_link": "https://to-do-app-nb.netlify.app/",
-    "featured": true
+    "featured": false
   },
   {
     "name": "tv show picker",
     "description": "front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
     "image": "no image yet",
     "github_link": "https://github.com/Wilrosmi/tv-shows",
-    "featured": true
+    "featured": false
   },
   {
     "name": "baby names picker",
@@ -28,7 +28,7 @@
     "image": "/img/clouds.png",
     "github_link": "https://openprocessing.org/sketch/1622568",
     "deployed_link": "https://openprocessing.org/sketch/1622568",
-    "featured": true
+    "featured": false
   },
   {
     "name": "perlin noise - overlapping patterns",
