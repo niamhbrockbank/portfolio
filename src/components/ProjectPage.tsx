@@ -1,4 +1,5 @@
 import { Project } from "../types";
+import gitHubLinkAvailable from "../utils/gitHubLinkAvailable";
 import projectsArchive from "./projectsArchive.json";
 
 interface ProjectPageProps {
@@ -24,7 +25,7 @@ export default function ProjectPage({
       <p>{description}</p>
       <ul>
         <li><a href={deployed_link}>find the project output here</a></li>
-        {currentProject.github_link && <li><a href={currentProject.github_link}>find the GitHub repo here</a></li>}
+        {gitHubLinkAvailable(currentProject) && <li><a href={currentProject.github_link}>find the GitHub repo here</a></li>}
         <li>date created:</li>
         <li>languages used: </li>
         <li>image</li>

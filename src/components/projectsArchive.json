@@ -26,7 +26,6 @@
     "name": "perlin noise - clouds",
     "description": "perlin noise experiment using p5.js. Emulates moving clouds.",
     "image": "/img/clouds.png",
-    "github_link": "https://openprocessing.org/sketch/1622568",
     "deployed_link": "https://openprocessing.org/sketch/1622568",
     "featured": false
   },
@@ -34,7 +33,6 @@
     "name": "perlin noise - overlapping patterns",
     "description": "perlin noise experiment using p5.js.",
     "image": "/img/overlapping-perlin-noise.png",
-    "github_link": "https://openprocessing.org/sketch/1633837",
     "deployed_link": "https://openprocessing.org/sketch/1633837",
     "featured": false
   },
@@ -42,7 +40,6 @@
     "name": "promises and async await",
     "description": "presentation on the use of promises and the async and await keywords in JavaScript.",
     "image": "no image yet",
-    "github_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
     "deployed_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
     "featured": false
   },
@@ -50,7 +47,6 @@
     "name": "recursion",
     "description": "presentation on the use of recursion.",
     "image": "no image yet",
-    "github_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
     "deployed_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
     "featured": false
   }
