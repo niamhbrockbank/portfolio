@@ -2,6 +2,7 @@ import { Project } from "../types";
 import goToGitHubRepo from "./goToGitHubRepo";
 
 const testProject: Project = {
+  id: 1,
   name: "tv show picker",
   description:
     "front-end app that fetches tv show data from an API and can navigate between shows with a dropdown",

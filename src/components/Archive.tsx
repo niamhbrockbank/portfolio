@@ -2,7 +2,7 @@ import { Project } from "../types";
 
 interface ArchiveProps {
   projectsArchive: Project[];
-  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export default function Archive({
@@ -18,7 +18,7 @@ export default function Archive({
             className="archive_project"
             key={projectsArchive.indexOf(project)}
             style={{ backgroundImage: `url(${project.image})` }}
-            onClick={() => setCurrentPage(project.name)}
+            onClick={() => setCurrentPage(project.id)}
           >
             <div id="archive_project_details">
               <h2 className="archive_project_title">

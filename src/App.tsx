@@ -5,22 +5,38 @@ import MenuBar from "./components/MenuBar";
 import "./styles.css";
 import { useState } from "react";
 import ProjectPage from "./components/ProjectPage";
+import { Project } from "./types";
 
 function App(): JSX.Element {
-  const [currentPage, setCurrentPage] = useState("homepage");
+  const [currentPage, setCurrentPage] = useState(0);
+  const [projectsArchive, setProjectsArchive] = useState<Project[]>([
+    {
+      id: 0,
+      name: "loading",
+      description: "loading project archive",
+      date_created: new Date(),
+    },
+  ]);
 
   return (
     <>
       <MenuBar setCurrentPage={setCurrentPage} />
-      {currentPage === "homepage" ? (
-        <>
+      {currentPage === 0 ? (
+        <div className="main_page">
           <IntroSection />
-          <ProjectsSection setCurrentPage={setCurrentPage} />
-        </>
+          <ProjectsSection
+            setCurrentPage={setCurrentPage}
+            projectsArchive={projectsArchive}
+            setProjectsArchive={setProjectsArchive}
+          />
+        </div>
       ) : (
-        <>
-          <ProjectPage currentPage={currentPage} />
-        </>
+        <div className="main_page">
+          <ProjectPage
+            currentPage={currentPage}
+            projectsArchive={projectsArchive}
+          />
+        </div>
       )}
       <Footer setCurrentPage={setCurrentPage} />
     </>
