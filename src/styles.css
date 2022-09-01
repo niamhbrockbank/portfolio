@@ -115,8 +115,8 @@ a {
   list-style-type: none;
   padding-left: 0px;
   display: grid;
-  grid-template-columns: 45vw 45vw;
-  column-gap: 2vw;
+  grid-template-columns: 1fr 1fr;
+  column-gap: min(2%, 15px);
   row-gap: 25px;
   justify-content: space-between;
 }
