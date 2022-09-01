@@ -6,4 +6,5 @@ export interface Project {
   github_link?: string;
   deployed_link?: string;
   featured?: boolean;
+  date_created? : Date
 }

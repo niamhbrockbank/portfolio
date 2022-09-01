@@ -1,4 +1,5 @@
 import { Project } from "../types";
+import moment from "moment"
 
 interface ProjectPageProps {
   currentPage: number;
@@ -17,7 +18,7 @@ export default function ProjectPage({
     return <h1>Project cannot be found.</h1>;
   }
 
-  const { name, description } = currentProject;
+  const { name, description, date_created} = currentProject;
 
   return (
     <div id="project_page">
@@ -37,9 +38,9 @@ export default function ProjectPage({
             <a href={currentProject.github_link}>find the GitHub repo here</a>
           </li>
         )}
-        <li>date created:</li>
-        <li>languages used: </li>
-        <li>image</li>
+        <li>date created: {moment(date_created).format("MMM Do YYYY")}</li>
+        {/* <li>languages used: </li>
+        <li>image</li> */}
       </ul>
     </div>
   );
