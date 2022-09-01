@@ -11,13 +11,13 @@ export default function MenuBar({ setCurrentPage }: MenuBarProps): JSX.Element {
         </li>
         <div id="menu_list">
           <li className="menu_list_option" onClick={() => setCurrentPage(0)}>
-            <a href="#featured_title">FEATURED</a>
+            <a href="#featured">FEATURED</a>
           </li>
           <li className="menu_list_option" onClick={() => setCurrentPage(0)}>
             <a href="#archive_title">ARCHIVE</a>
           </li>
           <li className="menu_list_option" onClick={() => setCurrentPage(0)}>
-            <a href="#contact_title">INFO</a>
+            <a href="#info">INFO</a>
           </li>
           <li className="menu_list_option">
             <a href="./Brockbank_Niamh_CV_220824.pdf" target="_blank">

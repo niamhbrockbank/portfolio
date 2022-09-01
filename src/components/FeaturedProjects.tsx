@@ -15,7 +15,7 @@ export default function FeaturedProjects({
 
   return (
     <>
-      <h1 id="featured_title">featured</h1>
+      <h1 id="featured">featured</h1>
       <ul id="featured_list">
         {featProjToShow.map((proj) => (
           <li className="featured_project" key={proj.name}>
