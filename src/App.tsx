@@ -9,7 +9,9 @@ import { Project } from "./types";
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);
-  const [projectsArchive, setProjectsArchive] = useState<Project[]>([{id : 0, name : "loading", description : "loading project archive"}])
+  const [projectsArchive, setProjectsArchive] = useState<Project[]>([
+    { id: 0, name: "loading", description: "loading project archive" },
+  ]);
 
   return (
     <>
@@ -17,11 +19,18 @@ function App(): JSX.Element {
       {currentPage === 0 ? (
         <div className="main_page">
           <IntroSection />
-          <ProjectsSection setCurrentPage={setCurrentPage} projectsArchive={projectsArchive} setProjectsArchive={setProjectsArchive}/>
+          <ProjectsSection
+            setCurrentPage={setCurrentPage}
+            projectsArchive={projectsArchive}
+            setProjectsArchive={setProjectsArchive}
+          />
         </div>
       ) : (
         <div className="main_page">
-          <ProjectPage currentPage={currentPage} projectsArchive={projectsArchive}/>
+          <ProjectPage
+            currentPage={currentPage}
+            projectsArchive={projectsArchive}
+          />
         </div>
       )}
       <Footer setCurrentPage={setCurrentPage} />

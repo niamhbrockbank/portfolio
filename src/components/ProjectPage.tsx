@@ -2,14 +2,16 @@ import { Project } from "../types";
 
 interface ProjectPageProps {
   currentPage: number;
-  projectsArchive: Project[]
+  projectsArchive: Project[];
 }
 
 export default function ProjectPage({
-  currentPage, projectsArchive
+  currentPage,
+  projectsArchive,
 }: ProjectPageProps): JSX.Element {
-
-  const currentProject = projectsArchive.find((proj) => proj.id === currentPage);
+  const currentProject = projectsArchive.find(
+    (proj) => proj.id === currentPage
+  );
 
   if (currentProject === undefined) {
     return <h1>Project cannot be found.</h1>;

@@ -70,7 +70,7 @@ a {
   border-bottom: 1.5px solid #41423e;
 }
 
-.main_page{
+.main_page {
   margin: 0px 30px 0px;
 }
 
@@ -172,7 +172,7 @@ a {
 
 #contact_title {
   text-transform: uppercase;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #project_page {
