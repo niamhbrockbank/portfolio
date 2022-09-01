@@ -5,12 +5,13 @@ import {Project} from '../types'
 
 interface ProjectsSectionProps {
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+  projectsArchive : Project[];
+  setProjectsArchive : React.Dispatch<React.SetStateAction<Project[]>>
 }
 
 export default function ProjectsSection({
-  setCurrentPage,
+  setCurrentPage, projectsArchive, setProjectsArchive
 }: ProjectsSectionProps): JSX.Element {
-  const [projectsArchive, setProjectsArchive] = useState<Project[]>([{id : 0, name : "loading", description : "loading project archive"}])
   
   useEffect( () => {
     async function fetchProjects(){

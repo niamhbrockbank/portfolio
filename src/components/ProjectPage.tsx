@@ -1,30 +1,15 @@
-import { useEffect, useState } from "react";
 import { Project } from "../types";
 
 interface ProjectPageProps {
   currentPage: number;
+  projectsArchive: Project[]
 }
 
 export default function ProjectPage({
-  currentPage
+  currentPage, projectsArchive
 }: ProjectPageProps): JSX.Element {
-  const [currentProject, setCurrentProject] = useState({id: 0, name: 'loading', description : 'loading here'})
-  
-  useEffect( () => {
-    async function fetchProjects(){
-      const response = await fetch(`https://niamh-brockbank.herokuapp.com/${currentPage}`)
-      const jsonBody : Project = await response.json()
-      setCurrentProject(jsonBody)
-    }
 
-    fetchProjects()
-  }, [currentPage])
-
-  console.log(currentProject)
-
-  // const currentProject: Project | undefined = projectsArchive.find(
-  //   (proj) => proj.name === currentPage
-  // );
+  const currentProject = projectsArchive.find((proj) => proj.id === currentPage);
 
   if (currentProject === undefined) {
     return <h1>Project cannot be found.</h1>;
