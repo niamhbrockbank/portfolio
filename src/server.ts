@@ -5,8 +5,13 @@ import {cors} from "cors"
 //middleware
 const app = express()
 express.json()
-//cors
-client.connect()
+app.use(cors())
+
+async function execute(){
+    client.connect()
+}
+
+execute()
 
 //Get all projects
 app.get('/', async (req, res) => {
@@ -23,5 +28,8 @@ app.get('/:id', async (req, res) => {
     res.json(jsonBody)
 })
 
-// app.listen()
+
+//client.end() ????
+
+// app.listen(5000)
 //Set up a port to listen on
