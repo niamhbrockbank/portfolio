@@ -92,9 +92,9 @@ a {
   list-style-type: none;
   padding-left: 0px;
   display: grid;
-  grid-template-columns: repeat(4, 22vw);
-  justify-content: space-between;
-  column-gap: 1vw;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: flex-start;
+  column-gap: min(2%, 15px);
 }
 
 .featured_project {
