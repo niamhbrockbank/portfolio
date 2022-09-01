@@ -1,5 +1,5 @@
 import { Project } from "../types";
-import moment from "moment"
+import moment from "moment";
 
 interface ProjectPageProps {
   currentPage: number;
@@ -18,7 +18,7 @@ export default function ProjectPage({
     return <h1>Project cannot be found.</h1>;
   }
 
-  const { name, description, date_created} = currentProject;
+  const { name, description, date_created } = currentProject;
 
   return (
     <div id="project_page">

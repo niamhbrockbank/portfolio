@@ -10,7 +10,12 @@ import { Project } from "./types";
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);
   const [projectsArchive, setProjectsArchive] = useState<Project[]>([
-    { id: 0, name: "loading", description: "loading project archive", date_created: new Date },
+    {
+      id: 0,
+      name: "loading",
+      description: "loading project archive",
+      date_created: new Date(),
+    },
   ]);
 
   return (
