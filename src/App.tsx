@@ -19,7 +19,7 @@ function App(): JSX.Element {
         </>
       ) : (
         <>
-          <ProjectPage currentPage={currentPage} />
+          <ProjectPage currentPage={currentPage}/>
         </>
       )}
       <Footer setCurrentPage={setCurrentPage} />

@@ -6,10 +6,10 @@ interface ProjectPageProps {
 }
 
 export default function ProjectPage({
-  currentPage,
+  currentPage
 }: ProjectPageProps): JSX.Element {
   const [currentProject, setCurrentProject] = useState({id: 0, name: 'loading', description : 'loading here'})
-
+  
   useEffect( () => {
     async function fetchProjects(){
       const response = await fetch(`https://niamh-brockbank.herokuapp.com/${currentPage}`)
@@ -19,6 +19,8 @@ export default function ProjectPage({
 
     fetchProjects()
   }, [currentPage])
+
+  console.log(currentProject)
 
   // const currentProject: Project | undefined = projectsArchive.find(
   //   (proj) => proj.name === currentPage

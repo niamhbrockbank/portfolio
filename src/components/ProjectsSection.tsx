@@ -11,16 +11,15 @@ export default function ProjectsSection({
   setCurrentPage,
 }: ProjectsSectionProps): JSX.Element {
   const [projectsArchive, setProjectsArchive] = useState<Project[]>([{id : 0, name : "loading", description : "loading project archive"}])
-
+  
   useEffect( () => {
     async function fetchProjects(){
       const response = await fetch('https://niamh-brockbank.herokuapp.com/')
       const jsonBody : Project[] = await response.json()
       setProjectsArchive(jsonBody)
     }
-
     fetchProjects()
-  }, [projectsArchive])
+  }, [])
 
   return (
     <>
