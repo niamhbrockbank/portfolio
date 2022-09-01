@@ -1,6 +1,7 @@
+import { useEffect, useState } from "react";
 import Archive from "./Archive";
 import FeaturedProjects from "./FeaturedProjects";
-import projectsArchive from "./projectsArchive.json";
+import {Project} from '../types'
 
 interface ProjectsSectionProps {
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
@@ -9,6 +10,18 @@ interface ProjectsSectionProps {
 export default function ProjectsSection({
   setCurrentPage,
 }: ProjectsSectionProps): JSX.Element {
+  const [projectsArchive, setProjectsArchive] = useState<Project[]>([{name : "loading", description : "loading project archive"}])
+
+  useEffect( () => {
+    async function fetchProjects(){
+      const response = await fetch('https://niamh-brockbank.herokuapp.com/')
+      const jsonBody : Project[] = await response.json()
+      setProjectsArchive(jsonBody)
+    }
+
+    fetchProjects()
+  }, [])
+
   return (
     <>
       <FeaturedProjects projectsArchive={projectsArchive} />
