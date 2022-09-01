@@ -4,13 +4,13 @@ import FeaturedProjects from "./FeaturedProjects";
 import {Project} from '../types'
 
 interface ProjectsSectionProps {
-  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export default function ProjectsSection({
   setCurrentPage,
 }: ProjectsSectionProps): JSX.Element {
-  const [projectsArchive, setProjectsArchive] = useState<Project[]>([{name : "loading", description : "loading project archive"}])
+  const [projectsArchive, setProjectsArchive] = useState<Project[]>([{id : 0, name : "loading", description : "loading project archive"}])
 
   useEffect( () => {
     async function fetchProjects(){
@@ -20,7 +20,7 @@ export default function ProjectsSection({
     }
 
     fetchProjects()
-  }, [])
+  }, [projectsArchive])
 
   return (
     <>

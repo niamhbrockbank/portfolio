@@ -7,12 +7,12 @@ import { useState } from "react";
 import ProjectPage from "./components/ProjectPage";
 
 function App(): JSX.Element {
-  const [currentPage, setCurrentPage] = useState("homepage");
+  const [currentPage, setCurrentPage] = useState(0);
 
   return (
     <>
       <MenuBar setCurrentPage={setCurrentPage} />
-      {currentPage === "homepage" ? (
+      {currentPage === 0 ? (
         <>
           <IntroSection />
           <ProjectsSection setCurrentPage={setCurrentPage} />

@@ -1,5 +1,5 @@
 interface FooterProps {
-  setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export default function Footer({ setCurrentPage }: FooterProps): JSX.Element {
