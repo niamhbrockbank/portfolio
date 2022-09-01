@@ -1,19 +1,27 @@
 import express from "express"
 import {client} from './db'
+import {cors} from "cors"
 
 //middleware
 const app = express()
-//json
+express.json()
+//cors
+client.connect()
 
-export async function execute() {
-    await client.connect()
-    console.log('Connected successfully')
-  
-    const results = await client.query('SELECT * FROM projects')
-    console.table(results.rows)
-  
-    await client.end()
-    console.log('Disconnected successfully')
-  }
+//Get all projects
+app.get('/', async (req, res) => {
+    const result = await client.query('SELECT * FROM projects')
+    const jsonBody = await result.json()
+    res.json(jsonBody)
+})
 
-execute()
+//Get one project
+app.get('/:id', async (req, res) => {
+    const {id} = req.params
+    const result = await client.query('SELECT * FROM projects WHERE id = $1', [id])
+    const jsonBody = await result.json()
+    res.json(jsonBody)
+})
+
+// app.listen()
+//Set up a port to listen on
