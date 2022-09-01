@@ -15,14 +15,14 @@ function App(): JSX.Element {
     <>
       <MenuBar setCurrentPage={setCurrentPage} />
       {currentPage === 0 ? (
-        <>
+        <div className="main_page">
           <IntroSection />
           <ProjectsSection setCurrentPage={setCurrentPage} projectsArchive={projectsArchive} setProjectsArchive={setProjectsArchive}/>
-        </>
+        </div>
       ) : (
-        <>
+        <div className="main_page">
           <ProjectPage currentPage={currentPage} projectsArchive={projectsArchive}/>
-        </>
+        </div>
       )}
       <Footer setCurrentPage={setCurrentPage} />
     </>

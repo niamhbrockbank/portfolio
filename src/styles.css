@@ -15,7 +15,6 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #41423e;
   background-color: #f9f9f5;
-  margin: 0px 30px 0px;
 }
 
 h1 {
@@ -35,19 +34,19 @@ a {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding: 0px 0px 20px;
+  padding: 30px 10px 20px;
   align-items: baseline;
   justify-content: space-between;
   font-size: medium;
   background-color: #f9f9f5;
   position: fixed;
-  width: 92vw;
+  width: 100vw;
   top: 0;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 #menu_list {
-  padding: 30px 0px 0px 0px;
+  padding: 0px 40px 0px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -69,6 +68,10 @@ a {
 
 .menu_list_option:hover {
   border-bottom: 1.5px solid #41423e;
+}
+
+.main_page{
+  margin: 0px 30px 0px;
 }
 
 #intro_section {
@@ -169,6 +172,7 @@ a {
 
 #contact_title {
   text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #project_page {
