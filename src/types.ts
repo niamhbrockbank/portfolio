@@ -10,6 +10,6 @@ export interface Project {
 }
 
 export interface Feature {
-  name : string,
-  link : string
+  name: string;
+  link: string;
 }

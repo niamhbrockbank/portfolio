@@ -1,14 +1,10 @@
 import { Feature } from "../types";
 import createPlaceholderFeats from "../utils/createPlaceholderFeats";
 
-interface FeaturedProjectsProps {
-}
+export default function FeaturedProjects(): JSX.Element {
+  const features: Feature[] = [];
 
-export default function FeaturedProjects({
-}: FeaturedProjectsProps): JSX.Element {
-  const features : Feature[]= [];
-
-  let numOfFeats = features.length;
+  const numOfFeats = features.length;
 
   return (
     <>
