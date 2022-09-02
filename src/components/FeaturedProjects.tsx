@@ -1,28 +1,25 @@
-import { Project } from "../types";
+import { Feature } from "../types";
 import createPlaceholderFeats from "../utils/createPlaceholderFeats";
 
 interface FeaturedProjectsProps {
-  projectsArchive: Project[];
 }
 
 export default function FeaturedProjects({
-  projectsArchive,
 }: FeaturedProjectsProps): JSX.Element {
-  const featProjList = projectsArchive.filter((proj) => proj.featured);
-  const featProjToShow = featProjList.slice(0, 4);
+  const features : Feature[]= [];
 
-  const numOfFeatProj = featProjToShow.length;
+  let numOfFeats = features.length;
 
   return (
     <>
       <h1 id="featured">featured</h1>
       <ul id="featured_list">
-        {featProjToShow.map((proj) => (
-          <li className="featured_project" key={proj.name}>
-            {proj.name}
+        {features.map((ft) => (
+          <li className="featured_project" key={ft.name}>
+            {ft.name}
           </li>
         ))}
-        {numOfFeatProj !== 4 && createPlaceholderFeats(4 - numOfFeatProj)}
+        {numOfFeats !== 4 && createPlaceholderFeats(4 - numOfFeats)}
       </ul>
     </>
   );

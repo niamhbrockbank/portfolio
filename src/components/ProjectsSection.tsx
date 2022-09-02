@@ -25,7 +25,7 @@ export default function ProjectsSection({
 
   return (
     <>
-      <FeaturedProjects projectsArchive={projectsArchive} />
+      <FeaturedProjects />
       <Archive
         projectsArchive={projectsArchive}
         setCurrentPage={setCurrentPage}

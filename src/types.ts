@@ -8,3 +8,8 @@ export interface Project {
   featured?: boolean;
   date_created?: Date;
 }
+
+export interface Feature {
+  name : string,
+  link : string
+}
