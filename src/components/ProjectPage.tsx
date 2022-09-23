@@ -39,8 +39,6 @@ export default function ProjectPage({
           </li>
         )}
         <li>date created: {moment(date_created).format("MMM Do YYYY")}</li>
-        {/* <li>languages used: </li>
-        <li>image</li> */}
       </ul>
     </div>
   );

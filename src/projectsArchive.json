@@ -1,53 +1,72 @@
 [
   {
+    "id" :  1,
     "name": "to-do app",
     "description": "full-stack app that allows a user to insert and delete tasks.",
     "image": "no image yet",
     "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end",
     "deployed_link": "https://to-do-app-nb.netlify.app/",
-    "featured": false
+    "featured": false,
+    "date_created" : "today"
   },
   {
+    "id" : 2,
     "name": "tv show picker",
     "description": "front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
     "image": "no image yet",
     "github_link": "https://github.com/Wilrosmi/tv-shows",
-    "featured": false
+    "deployed_link" : "not available at this time",
+    "featured": false,
+    "date_created" : "today"
   },
   {
+    "id" : 3,
     "name": "baby names picker",
     "description": "front-end app that can be used to choose baby names",
     "image": "no image yet",
     "github_link": "https://github.com/niamhbrockbank/baby-names-react",
     "deployed_link": "https://baby-names-nb.netlify.app/",
-    "featured": false
+    "featured": false,
+    "date_created" : "today"
   },
   {
+    "id" : 4,
     "name": "perlin noise - clouds",
     "description": "perlin noise experiment using p5.js. Emulates moving clouds.",
     "image": "/img/clouds.png",
+    "github_link" : "not available at this time",
     "deployed_link": "https://openprocessing.org/sketch/1622568",
-    "featured": false
+    "featured": false,
+    "date_created" : "today"
   },
   {
+    "id" : 5,
     "name": "perlin noise - overlapping patterns",
     "description": "perlin noise experiment using p5.js.",
     "image": "/img/overlapping-perlin-noise.png",
+    "github_link" : "not available at this time",
     "deployed_link": "https://openprocessing.org/sketch/1633837",
-    "featured": false
+    "featured": false,
+    "date_created" : "today"
   },
   {
+    "id" : 6,
     "name": "promises and async await",
     "description": "presentation on the use of promises and the async and await keywords in JavaScript.",
     "image": "no image yet",
+    "github_link" : "not available at this time",
     "deployed_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing",
-    "featured": false
+    "featured": false,
+    "date_created" : "today"
   },
   {
+    "id" : 7,
     "name": "recursion",
     "description": "presentation on the use of recursion.",
     "image": "no image yet",
+    "github_link" : "not available at this time",
     "deployed_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p",
-    "featured": false
+    "featured": false,
+    "date_created" : "today"
   }
 ]
