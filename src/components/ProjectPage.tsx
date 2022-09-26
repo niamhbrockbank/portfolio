@@ -1,5 +1,5 @@
 import { Project } from "../types";
-import moment from "moment";
+// import moment from "moment";
 
 interface ProjectPageProps {
   currentPage: number;
@@ -18,27 +18,32 @@ export default function ProjectPage({
     return <h1>Project cannot be found.</h1>;
   }
 
-  const { name, description, date_created } = currentProject;
+  const { name, description } = currentProject;
 
+  if (currentProject.front_end === undefined) {
+    return <p>no front-end</p>;
+  }
   return (
     <div id="project_page">
       <h1>{name}</h1>
       <p>{description}</p>
       <ul>
-        {currentProject.deployed_link && (
+        {currentProject.front_end.deployed_link && (
           <li>
-            <a href={currentProject.deployed_link}>
+            <a href={currentProject.front_end.deployed_link}>
               find the project output here
             </a>
           </li>
         )}
 
-        {currentProject.github_link && (
+        {currentProject.front_end.github_link && (
           <li>
-            <a href={currentProject.github_link}>find the GitHub repo here</a>
+            <a href={currentProject.front_end.github_link}>
+              find the GitHub repo here
+            </a>
           </li>
         )}
-        <li>date created: {moment(date_created).format("MMM Do YYYY")}</li>
+        {/* <li>date created: {moment(date_created).format("MMM Do YYYY")}</li> */}
       </ul>
     </div>
   );

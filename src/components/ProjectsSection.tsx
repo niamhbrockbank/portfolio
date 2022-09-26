@@ -9,9 +9,8 @@ interface ProjectsSectionProps {
 
 export default function ProjectsSection({
   setCurrentPage,
-  projectsArchive
+  projectsArchive,
 }: ProjectsSectionProps): JSX.Element {
-
   return (
     <>
       <FeaturedProjects />

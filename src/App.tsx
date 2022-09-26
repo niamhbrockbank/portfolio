@@ -5,7 +5,7 @@ import MenuBar from "./components/MenuBar";
 import "./styles.css";
 import { useState } from "react";
 import ProjectPage from "./components/ProjectPage";
-import projectsArchive from './projectsArchive.json'
+import projectsArchive from "./projectsArchive.json";
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);

@@ -17,7 +17,7 @@ export default function Archive({
           <li
             className="archive_project"
             key={projectsArchive.indexOf(project)}
-            style={{ backgroundImage: `url(${project.image})` }}
+            // style={{ backgroundImage: `url(${project.image})` }}
             onClick={() => setCurrentPage(project.id)}
           >
             <div id="archive_project_details">
