@@ -1,5 +1,5 @@
 import Archive from "./Archive";
-import FeaturedProjects from "./FeaturedProjects";
+// import FeaturedProjects from "./FeaturedProjects";
 import { Project } from "../types";
 
 interface ProjectsSectionProps {
@@ -13,7 +13,7 @@ export default function ProjectsSection({
 }: ProjectsSectionProps): JSX.Element {
   return (
     <>
-      <FeaturedProjects />
+      {/* <FeaturedProjects /> */}
       <Archive
         projectsArchive={projectsArchive}
         setCurrentPage={setCurrentPage}
