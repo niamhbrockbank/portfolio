@@ -21,26 +21,30 @@ export default function ProjectPage({
   const { name, description } = currentProject;
 
   return (
-    <div id='project_page'>
+    <div id="project_page">
       <h1>{name}</h1>
       <p>{description}</p>
       {/* <li>date created: {moment(date_created).format("MMM Do YYYY")}</li> */}
 
-      {currentProject.front_end !== undefined && 
+      {currentProject.front_end !== undefined && (
         <>
-        {/* <h1>Front End</h1> */}
-        <ul>
-          <li>
-            <a href={currentProject.front_end.deployed_link}>Find the deployed site here</a>
-          </li>
-          <li>
-          <a href={currentProject.front_end.github_link}>Find the GitHub repository here</a>
-          </li>
-        </ul>
+          {/* <h1>Front End</h1> */}
+          <ul>
+            <li>
+              <a href={currentProject.front_end.deployed_link}>
+                Find the deployed site here
+              </a>
+            </li>
+            <li>
+              <a href={currentProject.front_end.github_link}>
+                Find the GitHub repository here
+              </a>
+            </li>
+          </ul>
         </>
-      }
+      )}
 
       {/*back end, presentation, creative coding*/}
-    </div> 
-  )
+    </div>
+  );
 }
