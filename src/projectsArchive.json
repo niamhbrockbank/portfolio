@@ -68,5 +68,35 @@
       "github_link": "not available at this time",
       "deployed_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p"
     }
+  },
+  {
+    "id": 8,
+    "name": "eisenhower matrix",
+    "description": "This app will have an Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
+    "date_created": "today",
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix",
+      "deployed_link": "https://priorities-measure.netlify.app/"
+    }
+  },
+  {
+    "id": 9,
+    "name": "flow field experiments",
+    "description": "Experiments with perlin noise and flow fields to create images that resemble synthetic materials.",
+    "date_created": "today",
+    "front_end": {
+      "github_link": "https://openprocessing.org/sketch/1657841",
+      "deployed_link": "https://openprocessing.org/sketch/1657841"
+    }
+  },
+  {
+    "id": 10,
+    "name": "dog breed voting",
+    "description": "Vote on the cutest dog breed from two randomly selected from Dog Breed API.",
+    "date_created": "today",
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/c5b1-dog-breeds-front-end",
+      "deployed_link": "not available at this time"
+    }
   }
 ]
