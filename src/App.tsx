@@ -5,18 +5,10 @@ import MenuBar from "./components/MenuBar";
 import "./styles.css";
 import { useState } from "react";
 import ProjectPage from "./components/ProjectPage";
-import { Project } from "./types";
+import projectsArchive from "./projectsArchive.json";
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);
-  const [projectsArchive, setProjectsArchive] = useState<Project[]>([
-    {
-      id: 0,
-      name: "loading",
-      description: "loading project archive",
-      date_created: new Date(),
-    },
-  ]);
 
   return (
     <>
@@ -27,7 +19,6 @@ function App(): JSX.Element {
           <ProjectsSection
             setCurrentPage={setCurrentPage}
             projectsArchive={projectsArchive}
-            setProjectsArchive={setProjectsArchive}
           />
         </div>
       ) : (
