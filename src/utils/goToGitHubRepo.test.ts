@@ -6,8 +6,10 @@ const testProject: Project = {
   name: "tv show picker",
   description:
     "front-end app that fetches tv show data from an API and can navigate between shows with a dropdown",
-  image: "no image yet",
-  github_link: "https://github.com/Wilrosmi/tv-shows",
+  date_created: "today",
+  front_end :{
+    github_link: "https://github.com/Wilrosmi/tv-shows"
+  }
 };
 
 test("function returns void", () => {
