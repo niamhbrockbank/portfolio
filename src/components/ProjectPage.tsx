@@ -31,12 +31,20 @@ export default function ProjectPage({
           {/* <h1>Front End</h1> */}
           <ul>
             <li>
-              <a href={currentProject.front_end.deployed_link} target="_blank" rel="noreferrer">
+              <a
+                href={currentProject.front_end.deployed_link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Find the deployed site here
               </a>
             </li>
             <li>
-              <a href={currentProject.front_end.github_link} target="_blank" rel="noreferrer">
+              <a
+                href={currentProject.front_end.github_link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Find the GitHub repository here
               </a>
             </li>
