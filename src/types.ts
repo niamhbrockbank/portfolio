@@ -13,7 +13,7 @@ export interface Project {
     table_schema: [];
     table_schema_diagram: string;
     github_link: string;
-    deployed_link?: string;
+    deployed_link: string;
   };
   front_end?: {
     UI_wireframe?: string;
@@ -21,15 +21,16 @@ export interface Project {
     images?: string[];
     video_runthrough?: string;
     github_link: string;
-    deployed_link?: string;
+    deployed_link: string;
   };
   creative_coding?: {
     images: string;
     intentions: string;
-    deployed_link?: string;
+    deployed_link: string;
   };
   presentation?: {
     slides: string;
     video_runthrough?: string;
+    deployed_link: string;
   };
 }

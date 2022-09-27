@@ -1,5 +1,5 @@
 import { Project } from "../types";
-import goToGitHubRepo from "./goToGitHubRepo";
+import goToDeployedProject from "./goToDeployedProject";
 
 const testProject: Project = {
   id: 1,
@@ -14,10 +14,10 @@ const testProject: Project = {
 };
 
 test("function returns void", () => {
-  expect(goToGitHubRepo(testProject)).toBe(undefined);
+  expect(goToDeployedProject(testProject, "front_end")).toBe(undefined);
 });
 
 test.skip("opens correct github repo in new window", () => {
   //TO DO: test that new window opens
-  expect(goToGitHubRepo(testProject)).toBe(undefined);
+  expect(goToDeployedProject(testProject, "front_end")).toBe(undefined);
 });
