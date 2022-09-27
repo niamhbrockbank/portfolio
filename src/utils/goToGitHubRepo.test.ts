@@ -7,9 +7,9 @@ const testProject: Project = {
   description:
     "front-end app that fetches tv show data from an API and can navigate between shows with a dropdown",
   date_created: "today",
-  front_end :{
-    github_link: "https://github.com/Wilrosmi/tv-shows"
-  }
+  front_end: {
+    github_link: "https://github.com/Wilrosmi/tv-shows",
+  },
 };
 
 test("function returns void", () => {
