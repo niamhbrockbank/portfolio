@@ -25,9 +25,9 @@ export default function Archive({
                 {project.name.toLowerCase()}
               </h2>
               <p className="archive_project_description">
-                {project.description.length < 100
+                {project.description.length < 300
                   ? project.description
-                  : `${project.description.slice(0, 97)}...`}
+                  : `${project.description.slice(0, 297)}...`}
               </p>
             </div>
           </li>
