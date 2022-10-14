@@ -8,6 +8,7 @@ export interface Project {
   name: string;
   description: string;
   date_created: string;
+  tags : string[];
   back_end?: {
     API_documentation: string;
     table_schema: [];

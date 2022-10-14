@@ -1,6 +1,7 @@
 import Archive from "./Archive";
 // import FeaturedProjects from "./FeaturedProjects";
 import { Project } from "../../types";
+import FeaturedProjects from "./FeaturedProjects";
 
 interface ProjectsSectionProps {
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
@@ -13,7 +14,7 @@ export default function ProjectsSection({
 }: ProjectsSectionProps): JSX.Element {
   return (
     <>
-      {/* <FeaturedProjects /> */}
+      <FeaturedProjects />
       <Archive
         projectsArchive={projectsArchive}
         setCurrentPage={setCurrentPage}
