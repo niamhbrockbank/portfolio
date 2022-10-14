@@ -152,6 +152,21 @@ a {
   padding-bottom: 10px;
 }
 
+.tags{
+  margin-top: 5px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.tag{
+  border:1px solid whitesmoke;
+  padding: 1px 10px;
+  border-radius: 3px;
+}
+
 #footer_section {
   margin-top: 40px;
 }

@@ -4,7 +4,7 @@
     "name": "to-do app",
     "description": "full-stack app that allows a user to insert and delete tasks.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["PERN", "full-stack","CSS", "TypeScript"],
     "front_end": {
       "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end",
       "deployed_link": "https://to-do-app-nb.netlify.app/"
@@ -15,7 +15,7 @@
     "name": "tv show picker",
     "description": "front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["front-end", "TypeScript", "CSS"],
     "front_end": {
       "github_link": "https://github.com/Wilrosmi/tv-shows",
       "deployed_link": "not available at this time"
@@ -26,7 +26,7 @@
     "name": "baby names picker",
     "description": "front-end app that can be used to choose baby names",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["front-end", "CSS"],
     "front_end": {
       "github_link": "https://github.com/niamhbrockbank/baby-names-react",
       "deployed_link": "https://baby-names-nb.netlify.app/"
@@ -37,7 +37,7 @@
     "name": "perlin noise - clouds",
     "description": "perlin noise experiment using p5.js. Emulates moving clouds.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["open-processing", "creative coding"],
     "front_end": {
       "github_link": "not available at this time",
       "deployed_link": "https://openprocessing.org/sketch/1622568"
@@ -48,7 +48,7 @@
     "name": "perlin noise - overlapping patterns",
     "description": "perlin noise experiment using p5.js.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["open-processing", "creative coding"],
     "front_end": {
       "github_link": "not available at this time",
       "deployed_link": "https://openprocessing.org/sketch/1633837"
@@ -59,7 +59,7 @@
     "name": "promises and async await",
     "description": "presentation on the use of promises and the async and await keywords in JavaScript.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["presentation"],
     "front_end": {
       "github_link": "not available at this time",
       "deployed_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing"
@@ -70,7 +70,7 @@
     "name": "recursion",
     "description": "presentation on the use of recursion.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["presentation"],
     "front_end": {
       "github_link": "not available at this time",
       "deployed_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p"
@@ -81,7 +81,7 @@
     "name": "eisenhower matrix",
     "description": "This app will have an Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["PERN", "TypeScript", "CSS", "Bootstrap", "Express", "PostgreSQL", "full-stack"],
     "front_end": {
       "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix",
       "deployed_link": "https://priorities-measure.netlify.app/"
@@ -92,7 +92,7 @@
     "name": "flow field experiments",
     "description": "Experiments with perlin noise and flow fields to create images that resemble synthetic materials.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["open-processing", "creative coding"],
     "front_end": {
       "github_link": "https://openprocessing.org/sketch/1657841",
       "deployed_link": "https://openprocessing.org/sketch/1657841"
@@ -103,7 +103,7 @@
     "name": "dog breed voting",
     "description": "Vote on the cutest dog breed from two randomly selected from Dog Breed API.",
     "date_created": "today",
-    "tags" : [],
+    "tags" : ["PERN", "TypeScript", "SCSS", "Bootstrap", "Express", "PostgreSQL", "full-stack"],
     "front_end": {
       "github_link": "https://github.com/niamhbrockbank/c5b1-dog-breeds-front-end",
       "deployed_link": "not available at this time"

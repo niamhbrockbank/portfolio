@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { TypeFlags } from "typescript";
 import { Project } from "../../types";
 
 interface ArchiveProps {
@@ -31,6 +32,9 @@ export default function Archive({
                   ? project.description
                   : `${project.description.slice(0, 297)}...`}
               </p>
+              <ul className="tags">
+                {project.tags.map(tag => <li key={project.tags.indexOf(tag)} className="tag">{tag}</li>)}
+              </ul>
             </div>
           </li>
           </Link>
