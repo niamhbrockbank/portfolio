@@ -10,12 +10,12 @@ export default function Footer({ setCurrentPage }: FooterProps): JSX.Element {
         <nav id="footer">
           <ul id="footer_navigation_list">
             <li>
-              <a href="#featured" onClick={() => setCurrentPage(0)}>
+              <a href="/#featured">
                 Featured
               </a>
             </li>
             <li>
-              <a href="#archive_title" onClick={() => setCurrentPage(0)}>
+              <a href="/#archive_title">
                 Archive
               </a>
             </li>

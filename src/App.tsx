@@ -6,16 +6,18 @@ import "./styles.css";
 import { useState } from "react";
 import ProjectPage from "./components/ProjectPage";
 import projectsArchive from "./projectsArchive.json";
-import {Route, Link, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
+import { Project } from "./types";
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);
 
   return (
     <>
-      <MenuBar setCurrentPage={setCurrentPage} />
+      <MenuBar />
       <Routes>
-        <Route path='/' element={<Home setCurrentPage={setCurrentPage} currentPage={currentPage}/>} />
+        <Route path='/' element={<Home setCurrentPage={setCurrentPage}/>} />
+        <Route path='/project' element={<ProjectPageRoute currentPage={currentPage} projectsArchive={projectsArchive}/>} />
       </Routes>
       <Footer setCurrentPage={setCurrentPage} />
     </>
@@ -25,14 +27,12 @@ function App(): JSX.Element {
 export default App;
 
 interface HomeProps{
-  currentPage : number;
   setCurrentPage : React.Dispatch<React.SetStateAction<number>>;
 }
 
-export function Home({currentPage, setCurrentPage}: HomeProps):JSX.Element{
+export function Home({setCurrentPage}: HomeProps):JSX.Element{
   return (
     <>
-      {currentPage === 0 ? (
         <div className="main_page">
           <IntroSection />
           <ProjectsSection
@@ -40,14 +40,21 @@ export function Home({currentPage, setCurrentPage}: HomeProps):JSX.Element{
             projectsArchive={projectsArchive}
           />
         </div>
-      ) : (
-        <div className="main_page">
+    </>
+  )
+}
+
+interface ProjectPageRouteProps{
+  currentPage: number;
+  projectsArchive : Project[]
+}
+export function ProjectPageRoute({currentPage, projectsArchive} : ProjectPageRouteProps):JSX.Element{
+  return (
+    <div className="main_page">
           <ProjectPage
             currentPage={currentPage}
             projectsArchive={projectsArchive}
           />
-        </div>
-      )}
-    </>
+    </div>
   )
 }

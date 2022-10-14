@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Project } from "../types";
 
 interface ArchiveProps {
@@ -19,7 +20,8 @@ export default function Archive({
             key={projectsArchive.indexOf(project)}
             // style={{ backgroundImage: `url(${project.image})` }}
             onClick={() => setCurrentPage(project.id)}
-          >
+          > 
+            <Link to='/project'>
             <div id="archive_project_details">
               <h2 className="archive_project_title">
                 {project.name.toLowerCase()}
@@ -30,6 +32,7 @@ export default function Archive({
                   : `${project.description.slice(0, 297)}...`}
               </p>
             </div>
+            </Link>
           </li>
         ))}
       </ul>
