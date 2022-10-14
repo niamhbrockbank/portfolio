@@ -49,6 +49,11 @@ export default function ProjectPage({
                 Find the GitHub repository here
               </a>
             </li>
+            <li>tags:
+              <ul>
+                {currentProject.tags.map(tag => <li key={currentProject.tags.indexOf(tag)}>{tag}</li>)}
+              </ul>
+            </li>
           </ul>
         </>
       )}
