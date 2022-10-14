@@ -21,6 +21,7 @@ export default function ProjectPage({
   const { name, description } = currentProject;
 
   return (
+    <div className="main_page">
     <div id="project_page">
       <h1>{name}</h1>
       <p>{description}</p>
@@ -53,6 +54,7 @@ export default function ProjectPage({
       )}
 
       {/*back end, presentation, creative coding*/}
+    </div>
     </div>
   );
 }

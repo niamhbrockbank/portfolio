@@ -17,7 +17,7 @@ function App(): JSX.Element {
       <MenuBar />
       <Routes>
         <Route path='/' element={<Home setCurrentPage={setCurrentPage}/>} />
-        <Route path='/project' element={<ProjectPageRoute currentPage={currentPage} projectsArchive={projectsArchive}/>} />
+        <Route path='/project' element={<ProjectPage currentPage={currentPage} projectsArchive={projectsArchive}/>} />
       </Routes>
       <Footer setCurrentPage={setCurrentPage} />
     </>
@@ -41,20 +41,5 @@ export function Home({setCurrentPage}: HomeProps):JSX.Element{
           />
         </div>
     </>
-  )
-}
-
-interface ProjectPageRouteProps{
-  currentPage: number;
-  projectsArchive : Project[]
-}
-export function ProjectPageRoute({currentPage, projectsArchive} : ProjectPageRouteProps):JSX.Element{
-  return (
-    <div className="main_page">
-          <ProjectPage
-            currentPage={currentPage}
-            projectsArchive={projectsArchive}
-          />
-    </div>
   )
 }
