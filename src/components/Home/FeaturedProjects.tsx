@@ -1,5 +1,5 @@
-import { Feature } from "../types";
-import createPlaceholderFeats from "../utils/createPlaceholderFeats";
+import { Feature } from "../../types";
+import createPlaceholderFeats from "../../utils/createPlaceholderFeats";
 
 export default function FeaturedProjects(): JSX.Element {
   const features: Feature[] = [];

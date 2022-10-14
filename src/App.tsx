@@ -1,13 +1,11 @@
 import Footer from "./components/Footer";
-import IntroSection from "./components/IntroSection";
-import ProjectsSection from "./components/ProjectsSection";
 import MenuBar from "./components/MenuBar";
 import "./styles.css";
 import { useState } from "react";
 import ProjectPage from "./components/ProjectPage";
 import projectsArchive from "./projectsArchive.json";
 import {Route, Routes} from 'react-router-dom';
-import { Project } from "./types";
+import Home from "./components/Home/Home";
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);
@@ -26,20 +24,3 @@ function App(): JSX.Element {
 
 export default App;
 
-interface HomeProps{
-  setCurrentPage : React.Dispatch<React.SetStateAction<number>>;
-}
-
-export function Home({setCurrentPage}: HomeProps):JSX.Element{
-  return (
-    <>
-        <div className="main_page">
-          <IntroSection />
-          <ProjectsSection
-            setCurrentPage={setCurrentPage}
-            projectsArchive={projectsArchive}
-          />
-        </div>
-    </>
-  )
-}

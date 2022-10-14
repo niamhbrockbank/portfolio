@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Project } from "../types";
+import { Project } from "../../types";
 
 interface ArchiveProps {
   projectsArchive: Project[];
@@ -15,13 +15,13 @@ export default function Archive({
       <h1 id="archive_title">Archive</h1>
       <ul id="archive_list">
         {projectsArchive.map((project) => (
+          <Link to='/project' key={projectsArchive.indexOf(project)}>
           <li
             className="archive_project"
-            key={projectsArchive.indexOf(project)}
+            
             // style={{ backgroundImage: `url(${project.image})` }}
             onClick={() => setCurrentPage(project.id)}
           > 
-            <Link to='/project'>
             <div id="archive_project_details">
               <h2 className="archive_project_title">
                 {project.name.toLowerCase()}
@@ -32,8 +32,8 @@ export default function Archive({
                   : `${project.description.slice(0, 297)}...`}
               </p>
             </div>
-            </Link>
           </li>
+          </Link>
         ))}
       </ul>
     </>

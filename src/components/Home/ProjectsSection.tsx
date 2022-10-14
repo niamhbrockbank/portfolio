@@ -1,6 +1,6 @@
 import Archive from "./Archive";
 // import FeaturedProjects from "./FeaturedProjects";
-import { Project } from "../types";
+import { Project } from "../../types";
 
 interface ProjectsSectionProps {
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
