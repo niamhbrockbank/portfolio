@@ -6,6 +6,7 @@ import "./styles.css";
 import { useState } from "react";
 import ProjectPage from "./components/ProjectPage";
 import projectsArchive from "./projectsArchive.json";
+import {Route, Link, Routes} from 'react-router-dom';
 
 function App(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);
@@ -13,6 +14,24 @@ function App(): JSX.Element {
   return (
     <>
       <MenuBar setCurrentPage={setCurrentPage} />
+      <Routes>
+        <Route path='/' element={<Home setCurrentPage={setCurrentPage} currentPage={currentPage}/>} />
+      </Routes>
+      <Footer setCurrentPage={setCurrentPage} />
+    </>
+  );
+}
+
+export default App;
+
+interface HomeProps{
+  currentPage : number;
+  setCurrentPage : React.Dispatch<React.SetStateAction<number>>;
+}
+
+export function Home({currentPage, setCurrentPage}: HomeProps):JSX.Element{
+  return (
+    <>
       {currentPage === 0 ? (
         <div className="main_page">
           <IntroSection />
@@ -29,9 +48,6 @@ function App(): JSX.Element {
           />
         </div>
       )}
-      <Footer setCurrentPage={setCurrentPage} />
     </>
-  );
+  )
 }
-
-export default App;
