@@ -55,7 +55,7 @@ export default function ProjectPage({
             </li>
             <li>tags:
               <ul>
-                {currentProject.tags.map(tag => <li key={currentProject!.tags.indexOf(tag)}>{tag}</li>)}
+                {currentProject.tags.map((tag, i) => <li key={i}>{tag}</li>)}
               </ul>
             </li>
           </ul>
