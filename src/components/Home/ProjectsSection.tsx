@@ -12,9 +12,7 @@ export default function ProjectsSection({
   return (
     <>
       <FeaturedProjects />
-      <Archive
-        projectsArchive={projectsArchive}
-      />
+      <Archive projectsArchive={projectsArchive} />
     </>
   );
 }

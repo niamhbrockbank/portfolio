@@ -152,7 +152,7 @@ a {
   padding-bottom: 10px;
 }
 
-.tags{
+.tags {
   margin-top: 5px;
   list-style: none;
   padding-left: 0;
@@ -161,8 +161,8 @@ a {
   flex-wrap: wrap;
 }
 
-.tag{
-  border:1px solid whitesmoke;
+.tag {
+  border: 1px solid whitesmoke;
   padding: 1px 10px;
   border-radius: 3px;
 }

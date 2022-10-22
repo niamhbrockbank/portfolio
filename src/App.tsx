@@ -3,7 +3,7 @@ import MenuBar from "./components/MenuBar";
 import "./styles.css";
 import ProjectPage from "./components/ProjectPage";
 import projectsArchive from "./projectsArchive.json";
-import {Route, Routes} from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 
 function App(): JSX.Element {
@@ -11,8 +11,11 @@ function App(): JSX.Element {
     <>
       <MenuBar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/:id' element={<ProjectPage projectsArchive={projectsArchive}/>} />
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/:id"
+          element={<ProjectPage projectsArchive={projectsArchive} />}
+        />
       </Routes>
       <Footer />
     </>
@@ -20,4 +23,3 @@ function App(): JSX.Element {
 }
 
 export default App;
-
