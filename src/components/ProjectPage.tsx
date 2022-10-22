@@ -3,12 +3,10 @@ import { Project } from "../types";
 // import moment from "moment";
 
 interface ProjectPageProps {
-  currentPage: number;
   projectsArchive: Project[];
 }
 
 export default function ProjectPage({
-  currentPage,
   projectsArchive,
 }: ProjectPageProps): JSX.Element {
   const { id } = useParams()

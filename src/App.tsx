@@ -14,8 +14,8 @@ function App(): JSX.Element {
     <>
       <MenuBar />
       <Routes>
-        <Route path='/' element={<Home setCurrentPage={setCurrentPage}/>} />
-        <Route path='/:id' element={<ProjectPage currentPage={currentPage} projectsArchive={projectsArchive}/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/:id' element={<ProjectPage projectsArchive={projectsArchive}/>} />
       </Routes>
       <Footer setCurrentPage={setCurrentPage} />
     </>
