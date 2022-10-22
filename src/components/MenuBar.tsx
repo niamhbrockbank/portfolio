@@ -1,22 +1,20 @@
-interface MenuBarProps {
-  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-}
+import { Link } from "react-router-dom";
 
-export default function MenuBar({ setCurrentPage }: MenuBarProps): JSX.Element {
+export default function MenuBar(): JSX.Element {
   return (
     <>
       <ul id="menu_bar">
-        <li id="menu_name" onClick={() => setCurrentPage(0)}>
-          Niamh Brockbank
-        </li>
+        <Link to="/">
+          <li id="menu_name">Niamh Brockbank</li>
+        </Link>
         <div id="menu_list">
-          <li className="menu_list_option" onClick={() => setCurrentPage(0)}>
-            <a href="#featured">FEATURED</a>
+          <li className="menu_list_option">
+            <a href="/#featured">FEATURED</a>
           </li>
-          <li className="menu_list_option" onClick={() => setCurrentPage(0)}>
-            <a href="#archive_title">ARCHIVE</a>
+          <li className="menu_list_option">
+            <a href="/#archive_title">ARCHIVE</a>
           </li>
-          <li className="menu_list_option" onClick={() => setCurrentPage(0)}>
+          <li className="menu_list_option">
             <a href="#info">INFO</a>
           </li>
           <li className="menu_list_option">

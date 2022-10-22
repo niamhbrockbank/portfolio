@@ -1,8 +1,4 @@
-interface FooterProps {
-  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-}
-
-export default function Footer({ setCurrentPage }: FooterProps): JSX.Element {
+export default function Footer(): JSX.Element {
   return (
     <>
       <div id="footer_section">
@@ -10,19 +6,13 @@ export default function Footer({ setCurrentPage }: FooterProps): JSX.Element {
         <nav id="footer">
           <ul id="footer_navigation_list">
             <li>
-              <a href="#featured" onClick={() => setCurrentPage(0)}>
-                Featured
-              </a>
+              <a href="/#featured">Featured</a>
             </li>
             <li>
-              <a href="#archive_title" onClick={() => setCurrentPage(0)}>
-                Archive
-              </a>
+              <a href="/#archive_title">Archive</a>
             </li>
             <li>
-              <a href="#info" onClick={() => setCurrentPage(0)}>
-                Info
-              </a>
+              <a href="/#info">Info</a>
             </li>
           </ul>
           <ul id="social_media_list">
