@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import { Project } from "../types";
 // import moment from "moment";
 
@@ -10,9 +11,14 @@ export default function ProjectPage({
   currentPage,
   projectsArchive,
 }: ProjectPageProps): JSX.Element {
-  const currentProject = projectsArchive.find(
-    (proj) => proj.id === currentPage
-  );
+  const { id } = useParams()
+
+  let currentProject : undefined | Project = undefined
+  if (id !== undefined){
+    currentProject = projectsArchive.find(
+      (proj) => proj.id === parseInt(id)
+    );
+  }
 
   if (currentProject === undefined) {
     return <h1>Project cannot be found.</h1>;
@@ -51,7 +57,7 @@ export default function ProjectPage({
             </li>
             <li>tags:
               <ul>
-                {currentProject.tags.map(tag => <li key={currentProject.tags.indexOf(tag)}>{tag}</li>)}
+                {currentProject.tags.map(tag => <li key={currentProject!.tags.indexOf(tag)}>{tag}</li>)}
               </ul>
             </li>
           </ul>

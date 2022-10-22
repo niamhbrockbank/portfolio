@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { TypeFlags } from "typescript";
 import { Project } from "../../types";
 
 interface ArchiveProps {
@@ -16,7 +15,7 @@ export default function Archive({
       <h1 id="archive_title">Archive</h1>
       <ul id="archive_list">
         {projectsArchive.map((project) => (
-          <Link to='/project' key={projectsArchive.indexOf(project)}>
+          <Link to={`/${project.id}`} key={projectsArchive.indexOf(project)}>
           <li
             className="archive_project"
             

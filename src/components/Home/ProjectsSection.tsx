@@ -1,5 +1,4 @@
 import Archive from "./Archive";
-// import FeaturedProjects from "./FeaturedProjects";
 import { Project } from "../../types";
 import FeaturedProjects from "./FeaturedProjects";
 
