@@ -76,11 +76,12 @@ a {
 
 #intro_section {
   margin: 100px 0 30px 0;
+  width: 70vw;
 }
 
 #intro {
-  font-size: 40px;
-  width: 70vw;
+  font-size: min(4vw, 40pt);
+  max-width: 800px;
   margin: 0px;
 }
 
@@ -116,6 +117,7 @@ a {
   list-style-type: none;
   padding-left: 0px;
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: 1fr 1fr;
   column-gap: min(2%, 15px);
   row-gap: 25px;
@@ -134,6 +136,7 @@ a {
 }
 
 #archive_project_details {
+  /* font-size: min(2vw, 16pt); */
   display: flexbox;
   background-color: #41423e;
   color: whitesmoke;
