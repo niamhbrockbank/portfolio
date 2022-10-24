@@ -4,8 +4,7 @@ export default function IntroSection(): JSX.Element {
       <div id="intro_section">
         <h1>Intro</h1>
         <p id="intro">
-          Entry Level Software Developer pursuing creative and beautiful
-          solutions to big problems.
+          My name is Niamh Brockbank, I'm a <i>software developer</i> living and working in the UK.
         </p>
       </div>
     </>
