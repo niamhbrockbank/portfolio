@@ -8,9 +8,9 @@ export default function MenuBar(): JSX.Element {
           <li id="menu_name">Niamh Brockbank</li>
         </Link>
         <div id="menu_list">
-          <li className="menu_list_option">
+          {/* <li className="menu_list_option">
             <a href="/#featured">FEATURED</a>
-          </li>
+          </li> */}
           <li className="menu_list_option">
             <a href="/#archive_title">ARCHIVE</a>
           </li>
