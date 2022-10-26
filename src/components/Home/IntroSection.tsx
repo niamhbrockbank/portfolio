@@ -3,11 +3,13 @@ export default function IntroSection(): JSX.Element {
     <>
       <div id="intro_section">
         <h1>Intro</h1>
-        <p id="intro">
+        <div id="intro">
+          <p id='intro_words'>
           My name is Niamh Brockbank, I'm a <i>software developer</i> living and
           working in the UK.
-        </p>
-        {/* <img id="profile_photo" src="../img/IMG_7976.jpeg"></img> */}
+          </p>
+          <img id="profile_photo" src="../img/IMG_7976.jpeg"></img>
+        </div>
       </div>
     </>
   );
