@@ -11,7 +11,7 @@
       "Bootstrap",
       "Express",
       "PostgreSQL",
-      "full-stack"
+      "Full-stack"
     ],
     "objectives": [
       "Learn how to create drag and drop elements",
@@ -33,7 +33,7 @@
     "name": "tv show picker",
     "description": "Front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
     "date_created": "today",
-    "tags": ["front-end", "TypeScript", "CSS"],
+    "tags": ["Front-end", "TypeScript", "CSS"],
     "objectives": [
       "Use fetch to query an API",
       "Use React hook to manage states"
@@ -54,7 +54,7 @@
       "Bootstrap",
       "Express",
       "PostgreSQL",
-      "full-stack"
+      "Full-stack"
     ],
     "objectives": ["Create a PERN full-stack app", "Use Bootstrap for styling"],
     "back_end": {

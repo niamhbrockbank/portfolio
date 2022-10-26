@@ -12,13 +12,13 @@ export default function MenuBar(): JSX.Element {
             <a href="/#featured">FEATURED</a>
           </li> */}
           <li className="menu_list_option">
-            <a href="/#archive_title">ARCHIVE</a>
+            <a href="/#archive">ARCHIVE</a>
           </li>
           <li className="menu_list_option">
             <a href="#info">INFO</a>
           </li>
           <li className="menu_list_option">
-            <a href="./Brockbank_Niamh_CV_220824.pdf" target="_blank">
+            <a href="./Brockbank_Niamh_CV_221007.pdf" target="_blank">
               CV
             </a>
           </li>

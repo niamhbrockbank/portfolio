@@ -76,7 +76,7 @@ a {
 
 #intro_section {
   margin: 100px 0 30px 0;
-  width: 70vw;
+  width: 60vw;
 }
 
 #intro {
@@ -109,7 +109,7 @@ a {
   justify-content: center;
 }
 
-#archive_title {
+#archive {
   scroll-margin-top: 70px;
 }
 

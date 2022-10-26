@@ -17,7 +17,7 @@ export default function BackEnd({ project }: BackEndProps): JSX.Element {
                 target="_blank"
                 rel="noreferrer"
               >
-                Find the deployed back-end here
+                Find the deployed back-end <u>here</u>
               </a>
             </li>
             <li>
@@ -26,7 +26,7 @@ export default function BackEnd({ project }: BackEndProps): JSX.Element {
                 target="_blank"
                 rel="noreferrer"
               >
-                Find the back-end GitHub repository here
+                Find the back-end GitHub repository <u>here</u>
               </a>
             </li>
           </ul>

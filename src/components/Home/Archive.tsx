@@ -10,7 +10,7 @@ export default function Archive({
 }: ArchiveProps): JSX.Element {
   return (
     <>
-      <h1 id="archive_title">Projects Archive</h1>
+      <h1 id="archive">Projects Archive</h1>
       <ul id="archive_list">
         {projectsArchive.map((project) => (
           <Link to={`/${project.id}`} key={projectsArchive.indexOf(project)}>
