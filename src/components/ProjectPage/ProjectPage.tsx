@@ -30,16 +30,24 @@ export default function ProjectPage({
         <h1>{name}</h1>
         <p>{description}</p>
         {/* <li>date created: {moment(date_created).format("MMM Do YYYY")}</li> */}
-      
+        
+        <p className="tags" style={{color:"grey"}}>
+          {currentProject.tags.map((tag, i) => (
+            ` #${tag} `
+          ))}
+        </p>
+
+        {currentProject.objectives.length > 0 && (
+          <>
+          <h1>Objectives</h1>
+          <ul>
+            {currentProject.objectives.map((obj, i) => <li key={i}>{obj}</li>)}
+          </ul>
+          </>
+        )}
+
         <FrontEnd project={currentProject}/>
         <BackEnd project={currentProject}/>
-        
-        <h1>Tags</h1>
-        <ul>
-          {currentProject.tags.map((tag, i) => (
-            <li key={i}>{tag}</li>
-          ))}
-        </ul>
 
         {/*, presentation, creative coding*/}
       </div>

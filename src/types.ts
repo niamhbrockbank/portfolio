@@ -9,6 +9,7 @@ export interface Project {
   description: string;
   date_created: string;
   tags: string[];
+  objectives: string[];
   back_end?: {
     API_documentation?: string;
     table_schema?: [];
