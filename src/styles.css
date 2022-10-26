@@ -128,6 +128,7 @@ a {
   border: 2px solid #41423e;
   border-radius: 10px;
   height: 250px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -137,13 +138,14 @@ a {
 
 #archive_project_details {
   /* font-size: min(2vw, 16pt); */
-  display: flexbox;
+  display: grid;
   background-color: #41423e;
   color: whitesmoke;
   margin: 0px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 0px 0px 7px 7px;
   height: 250px;
+  grid-template-rows: 40px 100px 85px;
 }
 
 .archive_project_title,
@@ -157,14 +159,17 @@ a {
 
 .tags {
   margin-top: 5px;
+  margin-bottom: 5px;
   list-style: none;
   padding-left: 0;
   display: flex;
-  gap: 7px;
+  row-gap: 0px;
+  column-gap: 10px;
   flex-wrap: wrap;
 }
 
 .tag {
+  height: 20px;
   border: 1px solid whitesmoke;
   padding: 1px 10px;
   border-radius: 3px;
