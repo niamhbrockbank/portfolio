@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "name": "to-do app",
+    "description": "full-stack app that allows a user to insert and delete tasks.",
+    "date_created": "today",
+    "tags": ["PERN", "full-stack", "CSS", "TypeScript"],
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/to-do-app-front-end",
+      "deployed_link": "https://to-do-app-nb.netlify.app/"
+    }
+  },
+  {
+    "id": 2,
+    "name": "tv show picker",
+    "description": "front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
+    "date_created": "today",
+    "tags": ["front-end", "TypeScript", "CSS"],
+    "front_end": {
+      "github_link": "https://github.com/Wilrosmi/tv-shows",
+      "deployed_link": "not available at this time"
+    }
+  },
+  {
+    "id": 3,
+    "name": "baby names picker",
+    "description": "front-end app that can be used to choose baby names",
+    "date_created": "today",
+    "tags": ["front-end", "CSS"],
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/baby-names-react",
+      "deployed_link": "https://baby-names-nb.netlify.app/"
+    }
+  },
+  {
+    "id": 4,
+    "name": "perlin noise - clouds",
+    "description": "perlin noise experiment using p5.js. Emulates moving clouds.",
+    "date_created": "today",
+    "tags": ["open-processing", "creative coding"],
+    "front_end": {
+      "github_link": "not available at this time",
+      "deployed_link": "https://openprocessing.org/sketch/1622568"
+    }
+  },
+  {
+    "id": 5,
+    "name": "perlin noise - overlapping patterns",
+    "description": "perlin noise experiment using p5.js.",
+    "date_created": "today",
+    "tags": ["open-processing", "creative coding"],
+    "front_end": {
+      "github_link": "not available at this time",
+      "deployed_link": "https://openprocessing.org/sketch/1633837"
+    }
+  },
+  {
+    "id": 6,
+    "name": "promises and async await",
+    "description": "presentation on the use of promises and the async and await keywords in JavaScript.",
+    "date_created": "today",
+    "tags": ["presentation"],
+    "front_end": {
+      "github_link": "not available at this time",
+      "deployed_link": "https://docs.google.com/presentation/d/153ADavy2_ZE4IfUKc6Q7lzNvaUNmZxdVqnGa9l56Sdw/edit?usp=sharing"
+    }
+  },
+  {
+    "id": 7,
+    "name": "recursion",
+    "description": "presentation on the use of recursion.",
+    "date_created": "today",
+    "tags": ["presentation"],
+    "front_end": {
+      "github_link": "not available at this time",
+      "deployed_link": "https://docs.google.com/presentation/d/1kwps5-5MmTvKJZU2XY1PhJyVd9Ch9DCNeZK2XuVn9t0/edit#slide=id.p"
+    }
+  },
+  {
+    "id": 8,
+    "name": "eisenhower matrix",
+    "description": "This app will have an Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
+    "date_created": "today",
+    "tags": [
+      "PERN",
+      "TypeScript",
+      "CSS",
+      "Bootstrap",
+      "Express",
+      "PostgreSQL",
+      "full-stack"
+    ],
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix",
+      "deployed_link": "https://priorities-measure.netlify.app/"
+    }
+  },
+  {
+    "id": 9,
+    "name": "flow field experiments",
+    "description": "Experiments with perlin noise and flow fields to create images that resemble synthetic materials.",
+    "date_created": "today",
+    "tags": ["open-processing", "creative coding"],
+    "front_end": {
+      "github_link": "https://openprocessing.org/sketch/1657841",
+      "deployed_link": "https://openprocessing.org/sketch/1657841"
+    }
+  },
+  {
+    "id": 10,
+    "name": "dog breed voting",
+    "description": "Vote on the cutest dog breed from two randomly selected from Dog Breed API.",
+    "date_created": "today",
+    "tags": [
+      "PERN",
+      "TypeScript",
+      "SCSS",
+      "Bootstrap",
+      "Express",
+      "PostgreSQL",
+      "full-stack"
+    ],
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/c5b1-dog-breeds-front-end",
+      "deployed_link": "not available at this time"
+    }
+  },
+  {
+    "id": 11,
+    "name": "pastebin",
+    "description": "A full-stack code paste bin that retains formatting of pasted code.",
+    "date_created": "today",
+    "tags": [
+      "PERN",
+      "TypeScript",
+      "Bootstrap",
+      "Express",
+      "PostgreSQL",
+      "full-stack"
+    ],
+    "front_end": {
+      "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-Niamh-Salman-Frontend",
+      "deployed_link": "https://paste-bin-blue-whale-projects.netlify.app/"
+    }
+  }
+]
+
+//pastebin
+//resources
