@@ -10,9 +10,9 @@ export interface Project {
   date_created: string;
   tags: string[];
   back_end?: {
-    API_documentation: string;
-    table_schema: [];
-    table_schema_diagram: string;
+    API_documentation?: string;
+    table_schema?: [];
+    table_schema_diagram?: string;
     github_link: string;
     deployed_link: string;
   };

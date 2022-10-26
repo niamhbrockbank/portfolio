@@ -13,6 +13,10 @@
       "PostgreSQL",
       "full-stack"
     ],
+    "back_end": {
+      "github_link" : "https://github.com/niamhbrockbank/eisenhower-matrix-back-end",
+      "deployed_link" : "https://priorities-measure.herokuapp.com/notes"
+    },
     "front_end": {
       "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix",
       "deployed_link": "https://priorities-measure.netlify.app/"
@@ -42,6 +46,10 @@
       "PostgreSQL",
       "full-stack"
     ],
+    "back_end" :{
+      "github_link" : "https://github.com/Salman0112358/Paste-Bin-Project-W10-Niamh-Salman-Backend",
+      "deployed_link": "https://bluewhale-pastebin.herokuapp.com/"
+    },
     "front_end": {
       "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-Niamh-Salman-Frontend",
       "deployed_link": "https://paste-bin-blue-whale-projects.netlify.app/"
