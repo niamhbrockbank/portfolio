@@ -81,10 +81,9 @@ a {
 
 #intro {
   margin: 0px;
-  display : grid;
-  grid-template-columns: 60vw 30vw;
-  column-gap: 4vw;
+  display : flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 #intro_words {
@@ -95,9 +94,10 @@ a {
 #profile_photo{
   border-radius: 50%;
   height : 30vw;
-  max-height: 400px;
+  max-height: 450px;
   width : 30vw;
-  max-width: 400px;
+  max-width: 450px;
+  margin-left: 5vw;
 }
 
 #featured {
