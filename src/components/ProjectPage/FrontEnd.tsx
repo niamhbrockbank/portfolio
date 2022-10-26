@@ -1,13 +1,13 @@
-import { Project } from "../../types"
+import { Project } from "../../types";
 
-interface FrontEndProps{
-    project : Project
+interface FrontEndProps {
+  project: Project;
 }
 
-export default function FrontEnd({project} : FrontEndProps):JSX.Element{
+export default function FrontEnd({ project }: FrontEndProps): JSX.Element {
   return (
-      <>
-        {project.front_end !== undefined && (
+    <>
+      {project.front_end !== undefined && (
         <>
           <h1>Front End</h1>
           <ul>
@@ -32,6 +32,6 @@ export default function FrontEnd({project} : FrontEndProps):JSX.Element{
           </ul>
         </>
       )}
-      </>
-  )
+    </>
+  );
 }

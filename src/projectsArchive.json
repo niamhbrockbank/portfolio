@@ -13,10 +13,15 @@
       "PostgreSQL",
       "full-stack"
     ],
-    "objectives" : ["Learn how to create drag and drop elements", "Use styled components", "Learn how to sign in with Google", "Implement with socket.io"],
+    "objectives": [
+      "Learn how to create drag and drop elements",
+      "Use styled components",
+      "Learn how to sign in with Google",
+      "Implement with socket.io"
+    ],
     "back_end": {
-      "github_link" : "https://github.com/niamhbrockbank/eisenhower-matrix-back-end",
-      "deployed_link" : "https://priorities-measure.herokuapp.com/notes"
+      "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix-back-end",
+      "deployed_link": "https://priorities-measure.herokuapp.com/notes"
     },
     "front_end": {
       "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix",
@@ -29,7 +34,10 @@
     "description": "Front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
     "date_created": "today",
     "tags": ["front-end", "TypeScript", "CSS"],
-    "objectives" : ["Use fetch to query an API", "Use React hook to manage states"],
+    "objectives": [
+      "Use fetch to query an API",
+      "Use React hook to manage states"
+    ],
     "front_end": {
       "github_link": "https://github.com/Wilrosmi/tv-shows",
       "deployed_link": "https://will-niamh-tv-shows.netlify.app/"
@@ -48,9 +56,9 @@
       "PostgreSQL",
       "full-stack"
     ],
-    "objectives" : ["Create a PERN full-stack app", "Use Bootstrap for styling"],
-    "back_end" :{
-      "github_link" : "https://github.com/Salman0112358/Paste-Bin-Project-W10-Niamh-Salman-Backend",
+    "objectives": ["Create a PERN full-stack app", "Use Bootstrap for styling"],
+    "back_end": {
+      "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-W10-Niamh-Salman-Backend",
       "deployed_link": "https://bluewhale-pastebin.herokuapp.com/"
     },
     "front_end": {
