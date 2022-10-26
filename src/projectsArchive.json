@@ -2,7 +2,7 @@
   {
     "id": 8,
     "name": "eisenhower matrix",
-    "description": "This app will have an Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
+    "description": "An Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
     "date_created": "today",
     "tags": [
       "PERN",
