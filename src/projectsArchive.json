@@ -23,7 +23,8 @@
     ],
     "back_end": {
       "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix-back-end",
-      "deployed_link": "https://priorities-measure.herokuapp.com/notes"
+      "deployed_link": "https://priorities-measure.herokuapp.com/notes",
+      "table_schema" : ["DROP TABLE IF EXISTS notes\nCREATE TABLE notes\n       (\n         note_id SERIAL PRIMARY KEY,\n         note_body VARCHAR(255),\n         position_x INTEGER DEFAULT 465,\n         position_y INTEGER DEFAULT 540\n       )"]
     },
     "front_end": {
       "github_link": "https://github.com/niamhbrockbank/eisenhower-matrix",
@@ -32,7 +33,7 @@
   },
   {
     "id": 12,
-    "name": "learning resource sharer",
+    "name": "learning resources sharer",
     "description": "A PERN full-stack app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
     "date_created": "today",
     "tags": [

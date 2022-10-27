@@ -1,4 +1,5 @@
 import { Project } from "../../types";
+import mapToCodeSnippet from "../../utils/mapToCodeSnippet";
 
 interface BackEndProps {
   project: Project;
@@ -30,6 +31,14 @@ export default function BackEnd({ project }: BackEndProps): JSX.Element {
               </a>
             </li>
           </ul>
+          
+          {project.back_end.table_schema !== undefined && (
+          <div>
+              <h3>Table Schema</h3>
+              <p>The following SQL command shows the tables and their respective columns present in the database of this project, along with their constraints.</p>
+              {project.back_end.table_schema.map((schema, i) => mapToCodeSnippet(schema, "SQL", i))}
+          </div>
+          )}
         </>
       )}
     </>
