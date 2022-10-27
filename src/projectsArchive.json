@@ -79,7 +79,7 @@
   {
     "id": 2,
     "name": "tv show picker",
-    "description": "Front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
+    "description": "Front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar.",
     "date_created": "today",
     "tags": ["Front-end", "TypeScript", "CSS"],
     "objectives": [
