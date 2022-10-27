@@ -11,7 +11,9 @@
       "Bootstrap",
       "Express",
       "PostgreSQL",
-      "full-stack"
+      "Full-stack",
+      "Cypress",
+      "Firebase"
     ],
     "objectives": [
       "Learn how to create drag and drop elements",
@@ -29,18 +31,26 @@
     }
   },
   {
-    "id": 2,
-    "name": "tv show picker",
-    "description": "Front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
+    "id": 12,
+    "name": "learning resource sharer",
+    "description": "A PERN full-stack app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
     "date_created": "today",
-    "tags": ["front-end", "TypeScript", "CSS"],
-    "objectives": [
-      "Use fetch to query an API",
-      "Use React hook to manage states"
+    "tags": [
+      "Bootstrap",
+      "Express",
+      "Full-stack",
+      "TypeScript",
+      "PostgreSQL",
+      "PERN"
     ],
+    "objectives": [],
     "front_end": {
-      "github_link": "https://github.com/Wilrosmi/tv-shows",
-      "deployed_link": "https://will-niamh-tv-shows.netlify.app/"
+      "github_link": "https://github.com/Wilrosmi/C5C1-frontend",
+      "deployed_link": "https://c5c1-frontend.netlify.app"
+    },
+    "back_end": {
+      "github_link": "https://github.com/Wilrosmi/C5C1-backend",
+      "deployed_link": "https://c5c1-backend.herokuapp.com/"
     }
   },
   {
@@ -54,7 +64,7 @@
       "Bootstrap",
       "Express",
       "PostgreSQL",
-      "full-stack"
+      "Full-stack"
     ],
     "objectives": ["Create a PERN full-stack app", "Use Bootstrap for styling"],
     "back_end": {
@@ -64,6 +74,21 @@
     "front_end": {
       "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-Niamh-Salman-Frontend",
       "deployed_link": "https://paste-bin-blue-whale-projects.netlify.app/"
+    }
+  },
+  {
+    "id": 2,
+    "name": "tv show picker",
+    "description": "Front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar",
+    "date_created": "today",
+    "tags": ["Front-end", "TypeScript", "CSS"],
+    "objectives": [
+      "Use fetch to query an API",
+      "Use React hook to manage states"
+    ],
+    "front_end": {
+      "github_link": "https://github.com/Wilrosmi/tv-shows",
+      "deployed_link": "https://will-niamh-tv-shows.netlify.app/"
     }
   }
 ]

@@ -9,7 +9,7 @@ export default function Footer(): JSX.Element {
               <a href="/#featured">Featured</a>
             </li> */}
             <li>
-              <a href="/#archive_title">Archive</a>
+              <a href="/#archive">Archive</a>
             </li>
             <li>
               <a href="/#info">Info</a>

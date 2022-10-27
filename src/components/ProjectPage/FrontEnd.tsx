@@ -17,7 +17,7 @@ export default function FrontEnd({ project }: FrontEndProps): JSX.Element {
                 target="_blank"
                 rel="noreferrer"
               >
-                Find the deployed site here
+                Find the deployed site <u>here</u>
               </a>
             </li>
             <li>
@@ -26,7 +26,7 @@ export default function FrontEnd({ project }: FrontEndProps): JSX.Element {
                 target="_blank"
                 rel="noreferrer"
               >
-                Find the GitHub repository here
+                Find the GitHub repository <u>here</u>
               </a>
             </li>
           </ul>
