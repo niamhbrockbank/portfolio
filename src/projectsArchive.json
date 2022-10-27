@@ -26,6 +26,12 @@
       "deployed_link": "https://priorities-measure.herokuapp.com/notes",
       "table_schema": [
         "DROP TABLE IF EXISTS notes\nCREATE TABLE notes\n       (\n         note_id SERIAL PRIMARY KEY,\n         note_body VARCHAR(255),\n         position_x INTEGER DEFAULT 465,\n         position_y INTEGER DEFAULT 540\n       )"
+      ],
+      "API_documentation" : [
+        "//GET requests\n      GET    /notes", 
+        "//POST requests\n        POST   /notes    //create a new note\n        \n        //POST request body structure\n        {\n          \"note_body\" : string\n        }",
+        "//PUT requests\n        PUT    /notes    //update a specific note\n        \n        //PUT request body structure\n        {\n          \"note\" : {\n            \"note_id\" : number,\n            \"note_body\" : string,\n            \"position\" : {\n              \"x\" : number,\n              \"y\" : number\n            }\n          }\n        }",
+        "//DELETE requests\n        DELETE /notes   //delete a specific note\n        \n        //DELETE request body structure\n        {\n          \"note_id\" : number\n        }"
       ]
     },
     "front_end": {

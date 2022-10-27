@@ -31,7 +31,7 @@ export default function ProjectPage({
         <p>{description}</p>
         {/* <li>date created: {moment(date_created).format("MMM Do YYYY")}</li> */}
 
-        <p className="tags" style={{ color: "grey" }}>
+        <p style={{ color: "grey" }}>
           {currentProject.tags.map((tag, i) => ` #${tag} `)}
         </p>
 

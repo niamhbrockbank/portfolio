@@ -31,7 +31,15 @@ export default function BackEnd({ project }: BackEndProps): JSX.Element {
               </a>
             </li>
           </ul>
-
+          {project.back_end.API_documentation !== undefined && (
+            <>
+              <h3>API Documentation</h3>
+              <p>The following shows the API endpoints, a brief description of the purpose of said endpoints and the structure of a request body.</p>
+              {project.back_end.API_documentation.map((endpoint, i) => 
+                mapToCodeSnippet(endpoint, "Express", i)
+              )}
+            </>
+          )}
           {project.back_end.table_schema !== undefined && (
             <div>
               <h3>Table Schema</h3>
