@@ -177,13 +177,15 @@ a {
 
 .tags {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
   list-style: none;
   padding-left: 0;
   display: flex;
-  row-gap: 0px;
+  row-gap: 4px;
   column-gap: 10px;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .tag {
