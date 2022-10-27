@@ -37,4 +37,4 @@ export interface Project {
   };
 }
 
-export type Language = "SQL" | "TypeScript"
+export type Language = "SQL" | "TypeScript";
