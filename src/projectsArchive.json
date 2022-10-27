@@ -67,11 +67,11 @@
     }
   },
   {
-    "id" : 12,
-    "name" : "learning resource sharer",
-    "description" : "A PERN full-stack app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
-    "date_created" : "today",
-    "tags" : [
+    "id": 12,
+    "name": "learning resource sharer",
+    "description": "A PERN full-stack app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
+    "date_created": "today",
+    "tags": [
       "Bootstrap",
       "Express",
       "Full-stack",
@@ -79,10 +79,14 @@
       "PostgreSQL",
       "PERN"
     ],
-    "objectives" : [],
-    "front_end" : {
-      "github_link" : "https://github.com/Wilrosmi/C5C1-frontend",
-      "deployed_link" : "https://c5c1-frontend.netlify.app"
+    "objectives": [],
+    "front_end": {
+      "github_link": "https://github.com/Wilrosmi/C5C1-frontend",
+      "deployed_link": "https://c5c1-frontend.netlify.app"
+    },
+    "back_end": {
+      "github_link": "https://github.com/Wilrosmi/C5C1-backend",
+      "deployed_link": "https://c5c1-backend.herokuapp.com/"
     }
   }
 ]
