@@ -11,7 +11,7 @@ export interface Project {
   tags: string[];
   objectives: string[];
   back_end?: {
-    API_documentation?: string;
+    API_documentation?: string[];
     table_schema?: string[];
     table_schema_diagram?: string;
     github_link: string;
@@ -37,4 +37,4 @@ export interface Project {
   };
 }
 
-export type Language = "SQL" | "TypeScript";
+export type Language = "SQL" | "TypeScript" | "Express";
