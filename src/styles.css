@@ -202,7 +202,7 @@ a {
   border-radius: 0px 0px 7px 7px;
   min-height: 250px;
   /* grid-template-rows: max(3.6vw, 40px) max(10vw, 100px) max(7.6vw, 85px) 50px; */
-  grid-template-rows: 40px 95px 75px 20px; 
+  grid-template-rows: 40px 95px 75px 20px;
 }
 
 .archive_project_title,
@@ -214,7 +214,7 @@ a {
   padding-bottom: 10px;
 }
 
-.tags_div{
+.tags_div {
   display: flex;
   justify-content: flex-start;
   height: 30px;
@@ -240,14 +240,14 @@ a {
   border-radius: 3px;
 }
 
-.project_links{
+.project_links {
   margin-top: 25px;
   height: 22px;
   display: flex;
   justify-content: flex-end;
 }
 
-.project_link{
+.project_link {
   margin: 0px 10px;
 }
 
