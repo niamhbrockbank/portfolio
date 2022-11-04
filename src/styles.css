@@ -239,11 +239,11 @@ a {
 
 .tags {
   /* margin-bottom: 25px; */
-  height: 1.25em;
+  height: 1.15em;
   list-style: none;
   padding-left: 0;
   display: flex;
-  row-gap: 4px;
+  row-gap: 5px;
   column-gap: 10px;
   flex-wrap: wrap;
   flex-direction: row;
@@ -251,7 +251,7 @@ a {
 }
 
 .tag {
-  font-size: min(1.25em, 14pt);
+  font-size: min(1em, 12pt);
   /* height: 1.25em; */
   border: 1px solid whitesmoke;
   padding: 1px 10px;
