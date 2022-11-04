@@ -21,7 +21,8 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 100;
-  font-size: medium;
+  font-size: min(2em, 20pt);
+  /* font-size: medium; */
   padding: 20px 0 0 0px;
 }
 
@@ -94,7 +95,7 @@ a {
 
 #menu_name {
   margin: 0px;
-  font-size: 20px;
+  font-size: min(2em, 20pt);
   padding: 0 50px 0 20px;
   flex-wrap: nowrap;
 }
@@ -103,6 +104,7 @@ a {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   padding: 0px;
+  font-size: min(2em, 16pt)
 }
 
 .menu_list_option:hover {
@@ -187,13 +189,12 @@ a {
   min-width: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   background-size: cover;
   /* background-color: #f9f9f5; */
 }
 
 #archive_project_details {
-  /* font-size: min(2vw, 16pt); */
   display: grid;
   background-color: #41423e;
   color: whitesmoke;
@@ -201,8 +202,7 @@ a {
   padding: 2px 10px 20px 10px;
   border-radius: 0px 0px 7px 7px;
   min-height: 250px;
-  /* grid-template-rows: max(3.6vw, 40px) max(10vw, 100px) max(7.6vw, 85px) 50px; */
-  grid-template-rows: 40px 95px 75px 20px;
+  grid-template-rows: 3rem 7rem 3.25rem .2rem;
 }
 
 .archive_project_title,
@@ -212,6 +212,11 @@ a {
 
 .archive_project_title {
   padding-bottom: 10px;
+  font-size: min(2em, 24pt);
+}
+
+.archive_project_description{
+  font-size: min(1.2em, 18pt);
 }
 
 .tags_div {
@@ -234,21 +239,23 @@ a {
 }
 
 .tag {
-  height: 20px;
+  font-size: min(1.25em, 14pt);
+  /* height: 1.25em; */
   border: 1px solid whitesmoke;
   padding: 1px 10px;
   border-radius: 3px;
 }
 
 .project_links {
-  margin-top: 25px;
-  height: 22px;
+  margin-top: 15px;
+  height: 32px;
   display: flex;
   justify-content: flex-end;
 }
 
 .project_link {
   margin: 0px 10px;
+  padding-bottom: 10px;
 }
 
 #footer_section {
