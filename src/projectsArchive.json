@@ -1,7 +1,7 @@
 [
   {
     "id": 8,
-    "name": "eisenhower matrix",
+    "name": "Eisenhower Matrix",
     "description": "An Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
     "date_created": "today",
     "tags": [
@@ -41,8 +41,8 @@
   },
   {
     "id": 12,
-    "name": "learning resources sharer",
-    "description": "A PERN full-stack app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
+    "name": "resources sharer",
+    "description": "An app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers.",
     "date_created": "today",
     "tags": [
       "Bootstrap",

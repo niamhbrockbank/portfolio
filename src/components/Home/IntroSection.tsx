@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function IntroSection(): JSX.Element {
+  const [photo, setPhoto] = useState("../img/IMG_7976.jpeg")
+
   return (
     <>
       <div id="intro_section">
@@ -10,8 +14,10 @@ export default function IntroSection(): JSX.Element {
           </p>
           <img
             id="profile_photo"
-            src="../img/IMG_7976.jpeg"
+            src={photo}
             alt="Niamh Brockbank generated using Stable Diffusion"
+            onMouseEnter={() => setTimeout(() => setPhoto("../img/IMG_2919_Original 2.jpeg"), 100)}
+            onMouseLeave={() => setTimeout(() => setPhoto("../img/IMG_7976.jpeg"), 100)}
           ></img>
         </div>
       </div>

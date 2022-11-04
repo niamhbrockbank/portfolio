@@ -139,6 +139,11 @@ a {
   width: 30vw;
   max-width: 450px;
   margin-left: 5vw;
+  transition: all .3s cubic-bezier(0,0,.58,1);
+}
+
+#profile_photo:hover{
+	transform: scale(0.99);
 }
 
 #featured {
@@ -192,6 +197,10 @@ a {
   justify-content: space-evenly;
   background-size: cover;
   /* background-color: #f9f9f5; */
+  transition: all .2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.archive_project:hover{
+  transform: scale(1.01)
 }
 
 #archive_project_details {
@@ -251,6 +260,7 @@ a {
   height: 32px;
   display: flex;
   justify-content: flex-end;
+  padding-right: 10px;
 }
 
 .project_link {
