@@ -21,7 +21,8 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 100;
-  font-size: medium;
+  font-size: min(2em, 20pt);
+  /* font-size: medium; */
   padding: 20px 0 0 0px;
 }
 
@@ -76,7 +77,6 @@ a {
   padding: 30px 10px 20px;
   align-items: baseline;
   justify-content: space-between;
-  font-size: medium;
   background-color: #f9f9f5;
   position: fixed;
   width: 100vw;
@@ -94,7 +94,7 @@ a {
 
 #menu_name {
   margin: 0px;
-  font-size: 20px;
+  font-size: min(2em, 20pt);
   padding: 0 50px 0 20px;
   flex-wrap: nowrap;
 }
@@ -103,6 +103,7 @@ a {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   padding: 0px;
+  font-size: min(2em, 16pt);
 }
 
 .menu_list_option:hover {
@@ -137,6 +138,11 @@ a {
   width: 30vw;
   max-width: 450px;
   margin-left: 5vw;
+  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+}
+
+#profile_photo:hover {
+  transform: scale(0.99);
 }
 
 #featured {
@@ -187,22 +193,25 @@ a {
   min-width: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   background-size: cover;
   /* background-color: #f9f9f5; */
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.archive_project:hover {
+  transform: scale(1.01);
 }
 
 #archive_project_details {
-  /* font-size: min(2vw, 16pt); */
+  overflow: hidden;
   display: grid;
   background-color: #41423e;
   color: whitesmoke;
   margin: 0px;
-  padding: 2px 10px 20px 10px;
+  padding: 0px 10px 0px 10px;
   border-radius: 0px 0px 7px 7px;
   min-height: 250px;
-  /* grid-template-rows: max(3.6vw, 40px) max(10vw, 100px) max(7.6vw, 85px) 50px; */
-  grid-template-rows: 40px 95px 75px 20px;
+  grid-template-rows: 3rem 7rem 3.25rem 0.2rem;
 }
 
 .archive_project_title,
@@ -212,43 +221,53 @@ a {
 
 .archive_project_title {
   padding-bottom: 10px;
+  font-size: min(2em, 24pt);
+}
+
+.archive_project_description {
+  font-size: min(1.2em, 18pt);
 }
 
 .tags_div {
-  display: flex;
-  justify-content: flex-start;
-  height: 30px;
+  display: grid;
+  grid-template-columns: calc(100% - max(20%, 95px)) max(20%, 95px);
+  overflow: hidden;
+  align-items: center;
+  height: 90px;
 }
 
 .tags {
-  margin-top: 5px;
   /* margin-bottom: 25px; */
+  height: 1.15em;
   list-style: none;
   padding-left: 0;
   display: flex;
-  row-gap: 4px;
+  row-gap: 5px;
   column-gap: 10px;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .tag {
-  height: 20px;
+  font-size: min(1em, 12pt);
+  /* height: 1.25em; */
   border: 1px solid whitesmoke;
   padding: 1px 10px;
   border-radius: 3px;
 }
 
 .project_links {
-  margin-top: 25px;
-  height: 22px;
+  margin-top: 15px;
+  height: 32px;
   display: flex;
   justify-content: flex-end;
+  padding-right: 10px;
 }
 
 .project_link {
   margin: 0px 10px;
+  padding-bottom: 10px;
 }
 
 #footer_section {
