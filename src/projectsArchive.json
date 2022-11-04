@@ -5,15 +5,16 @@
     "description": "An Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
     "date_created": "today",
     "tags": [
+      "Firebase",
+      "Cypress",
       "PERN",
       "TypeScript",
       "CSS",
       "Bootstrap",
       "Express",
-      "PostgreSQL",
-      "Full-stack",
-      "Cypress",
-      "Firebase"
+      "PostgreSQL"
+      
+      
     ],
     "objectives": [
       "Learn how to create drag and drop elements",
@@ -42,15 +43,14 @@
   {
     "id": 12,
     "name": "resources sharer",
-    "description": "An app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers.",
+    "description": "An app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
     "date_created": "today",
     "tags": [
-      "Bootstrap",
+      "PERN",
       "Express",
-      "Full-stack",
       "TypeScript",
-      "PostgreSQL",
-      "PERN"
+      "Bootstrap"
+      
     ],
     "objectives": [],
     "front_end": {
@@ -75,8 +75,7 @@
       "TypeScript",
       "Bootstrap",
       "Express",
-      "PostgreSQL",
-      "Full-stack"
+      "PostgreSQL"
     ],
     "objectives": ["Create a PERN full-stack app", "Use Bootstrap for styling"],
     "back_end": {

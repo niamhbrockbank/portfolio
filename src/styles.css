@@ -204,6 +204,7 @@ a {
 }
 
 #archive_project_details {
+  overflow: hidden;
   display: grid;
   background-color: #41423e;
   color: whitesmoke;
@@ -229,14 +230,16 @@ a {
 }
 
 .tags_div {
-  display: flex;
-  justify-content: flex-start;
-  height: 30px;
+  display: grid;
+  grid-template-columns: calc(100% - max(20%, 95px)) max(20%, 95px) ;
+  overflow: hidden;
+  align-items: center;
+  height: 90px;
 }
 
 .tags {
-  margin-top: 5px;
   /* margin-bottom: 25px; */
+  height: 1.25em;
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -244,7 +247,7 @@ a {
   column-gap: 10px;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .tag {
