@@ -18,7 +18,7 @@ export default function MenuBar(): JSX.Element {
             <a href="#info">INFO</a>
           </li>
           <li className="menu_list_option">
-            <a href="./Brockbank_Niamh_CV_221007.pdf" target="_blank">
+            <a href="./Brockbank_Niamh_CV_221104.pdf" target="_blank">
               CV
             </a>
           </li>
