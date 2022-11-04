@@ -28,16 +28,16 @@ export default function Archive({
                   ? project.description
                   : `${project.description.slice(0, 297)}...`}
               </p>
-                <div className="tags_div">
-                  <ul className="tags">
-                    {project.tags.map((tag) => (
-                      <li key={project.tags.indexOf(tag)} className="tag">
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
+              <div className="tags_div">
+                <ul className="tags">
+                  {project.tags.map((tag) => (
+                    <li key={project.tags.indexOf(tag)} className="tag">
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
 
-                  <div className="project_links">
+                <div className="project_links">
                   {project.front_end?.deployed_link !== "undefined" && (
                     <img
                       className="project_link"
@@ -59,9 +59,8 @@ export default function Archive({
                     />
                   )}
                 </div>
-                </div>
-                
               </div>
+            </div>
           </li>
           // </Link>
         ))}

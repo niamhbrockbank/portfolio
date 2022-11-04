@@ -103,7 +103,7 @@ a {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   padding: 0px;
-  font-size: min(2em, 16pt)
+  font-size: min(2em, 16pt);
 }
 
 .menu_list_option:hover {
@@ -138,11 +138,11 @@ a {
   width: 30vw;
   max-width: 450px;
   margin-left: 5vw;
-  transition: all .3s cubic-bezier(0,0,.58,1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
 }
 
-#profile_photo:hover{
-	transform: scale(0.99);
+#profile_photo:hover {
+  transform: scale(0.99);
 }
 
 #featured {
@@ -196,10 +196,10 @@ a {
   justify-content: space-evenly;
   background-size: cover;
   /* background-color: #f9f9f5; */
-  transition: all .2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.archive_project:hover{
-  transform: scale(1.01)
+.archive_project:hover {
+  transform: scale(1.01);
 }
 
 #archive_project_details {
@@ -211,7 +211,7 @@ a {
   padding: 0px 10px 0px 10px;
   border-radius: 0px 0px 7px 7px;
   min-height: 250px;
-  grid-template-rows: 3rem 7rem 3.25rem .2rem;
+  grid-template-rows: 3rem 7rem 3.25rem 0.2rem;
 }
 
 .archive_project_title,
@@ -224,13 +224,13 @@ a {
   font-size: min(2em, 24pt);
 }
 
-.archive_project_description{
+.archive_project_description {
   font-size: min(1.2em, 18pt);
 }
 
 .tags_div {
   display: grid;
-  grid-template-columns: calc(100% - max(20%, 95px)) max(20%, 95px) ;
+  grid-template-columns: calc(100% - max(20%, 95px)) max(20%, 95px);
   overflow: hidden;
   align-items: center;
   height: 90px;
