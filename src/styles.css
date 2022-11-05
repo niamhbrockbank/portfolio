@@ -269,6 +269,7 @@ a {
 .project_link {
   margin: 0px 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 #footer_section {
