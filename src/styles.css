@@ -190,6 +190,7 @@ a {
   border-radius: 10px;
   min-height: 275px;
   height: 20vw;
+  max-height: 400px;
   min-width: 350px;
   display: flex;
   flex-direction: column;
@@ -208,7 +209,7 @@ a {
   background-color: #41423e;
   color: whitesmoke;
   margin: 0px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px max(10px, 1.5vw) 0px max(10px, 1.5vw);
   border-radius: 0px 0px 7px 7px;
   min-height: 250px;
   grid-template-rows: 3rem 7rem 3.25rem 0.2rem;
@@ -242,7 +243,7 @@ a {
   list-style: none;
   padding-left: 0;
   display: flex;
-  row-gap: 5px;
+  row-gap: 6px;
   column-gap: 10px;
   flex-wrap: wrap;
   flex-direction: row;
@@ -268,6 +269,7 @@ a {
 .project_link {
   margin: 0px 10px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 #footer_section {
