@@ -16,9 +16,7 @@ export default function IntroSection(): JSX.Element {
             id="profile_photo"
             src={photo}
             alt="Niamh Brockbank generated using Stable Diffusion"
-            onMouseEnter={() =>
-              setPhoto("../img/IMG_2919_Original 2.jpeg")
-            }
+            onMouseEnter={() => setPhoto("../img/IMG_2919_Original 2.jpeg")}
             onMouseLeave={() =>
               setTimeout(() => setPhoto("../img/IMG_7976.jpeg"), 100)
             }
