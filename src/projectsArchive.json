@@ -7,12 +7,7 @@
     "tags": [
       "Firebase",
       "Cypress",
-      "PERN",
-      "TypeScript",
-      "CSS",
-      "Bootstrap",
-      "Express",
-      "PostgreSQL"
+      "PERN"
     ],
     "objectives": [
       "Learn how to create drag and drop elements",
@@ -43,7 +38,7 @@
     "name": "resources sharer",
     "description": "An app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
     "date_created": "today",
-    "tags": ["PERN", "Express", "TypeScript", "Bootstrap"],
+    "tags": ["PERN", "Express", "Bootstrap"],
     "objectives": [],
     "front_end": {
       "github_link": "https://github.com/Wilrosmi/C5C1-frontend",
@@ -62,7 +57,7 @@
     "name": "pastebin",
     "description": "A full-stack code paste bin that retains formatting of pasted code.",
     "date_created": "today",
-    "tags": ["PERN", "TypeScript", "Bootstrap", "Express", "PostgreSQL"],
+    "tags": ["PERN", "TypeScript", "Bootstrap", "Express"],
     "objectives": ["Create a PERN full-stack app", "Use Bootstrap for styling"],
     "back_end": {
       "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-W10-Niamh-Salman-Backend",
