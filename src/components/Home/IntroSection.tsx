@@ -8,7 +8,7 @@ export default function IntroSection(): JSX.Element {
       <div id="intro_section">
         <h1>Intro</h1>
         <div id="intro">
-        <img
+          <img
             id="profile_photo"
             src={photo}
             alt="Niamh Brockbank generated using Stable Diffusion"
@@ -21,7 +21,6 @@ export default function IntroSection(): JSX.Element {
             My name is Niamh Brockbank, I'm a <i>software developer</i> living
             and working in the UK.
           </p>
-          
         </div>
       </div>
     </>
