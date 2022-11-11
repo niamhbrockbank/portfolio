@@ -185,20 +185,19 @@ a {
   justify-content: flex-start;
 }
 
-@media screen and (max-width: 455px){
+@media screen and (max-width: 455px) {
   #archive_list {
     grid-template-columns: 1fr;
   }
 }
 
-@media screen and (min-width : 500px){
+@media screen and (min-width: 500px) {
   #archive_list {
     grid-template-columns: 0.5fr 0.5fr;
   }
 }
 
-@media screen and (min-width : 600px) {
-  
+@media screen and (min-width: 600px) {
 }
 
 .archive_project {
