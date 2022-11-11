@@ -22,7 +22,7 @@ h1 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 100;
-  font-size: large;
+  font-size: 1.4em;
   /* font-size: medium; */
   padding: 20px 0 0 0px;
 }
@@ -95,7 +95,7 @@ a {
 
 #menu_name {
   margin: 0px;
-  font-size: 18px;
+  font-size: 1.4em;
   padding: 0 50px 0 20px;
   flex-wrap: nowrap;
 }
@@ -104,7 +104,7 @@ a {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   padding: 0px;
-  font-size: medium;
+  font-size: 1.4em;
 }
 
 .menu_list_option:hover {
@@ -219,11 +219,11 @@ a {
 
 .archive_project_title {
   padding-bottom: 10px;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .archive_project_description {
-  font-size: 18px;
+  font-size: 1em;
   /* overflow: hidden; */
   /* height: 60px; */
 }
