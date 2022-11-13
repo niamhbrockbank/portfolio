@@ -1,24 +1,27 @@
 // import { Link } from "react-router-dom";
 import { Project } from "../../types";
-import './Work.scss'
+import "./Work.scss";
+//TODO: import projects archive directly here
 
 //TODO: change all function component props to IProps
 interface IProps {
   projectsArchive: Project[];
 }
 
-export default function Work({
-  projectsArchive,
-}: IProps): JSX.Element {
+export default function Work({ projectsArchive }: IProps): JSX.Element {
   return (
     <>
       <h1 id="archive">WORK</h1>
-      <p className="description">This is a showcase of the projects that I am most proud of. It is a mixture of front end full-stack projects. I am always learning to use new technologies.</p>
-      <ul id="archive_list">
+      <p className="page_description">
+        This is a showcase of the projects that I am most proud of. It is a
+        mixture of front end full-stack projects. I am always learning to use
+        new technologies.
+      </p>
+      <ul id="project_list">
         {projectsArchive.map((project) => (
           // <Link to={`/${project.id}`} key={project.id}>
           <li
-            className="archive_project"
+            className="project"
             key={project.id}
             // style={{ backgroundImage: `url(${project.image})` }}
           >
