@@ -37,6 +37,7 @@ export default function Menu(): JSX.Element {
         </>
        ) : (
         <ul className="menu_bar">
+          {/*TODO: hide menu bar when rerender to large screen */}
           {menuOptionsList}
         </ul>
       )}
