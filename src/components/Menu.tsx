@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 export default function Menu(): JSX.Element {
   const [showMenu, setShowMenu] = useState(false);
@@ -10,7 +11,7 @@ export default function Menu(): JSX.Element {
     return (
       <li key={i}>
         <h2>
-          <a href={`/${option !== "home" ? option : ""}`}>{option}</a>
+          <Link to={`/${option !== "home" ? option : ""}`}>{option}</Link>
         </h2>
       </li>
     );
