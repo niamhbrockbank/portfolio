@@ -24,10 +24,7 @@ function App(): JSX.Element {
         />{" "}
         {/* TODO: Change project pages to /work/:id or /:name */}
         <Route path="/about" element={<About />} />
-        <Route
-          path="/contact"
-          element={<Contact />}
-        />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />
       </Routes>
       {/* <Footer /> */}
