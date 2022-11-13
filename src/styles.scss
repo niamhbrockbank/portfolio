@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-#menu_bar {
+.menu_bar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -48,6 +48,7 @@ a {
 
   position: fixed;
   width: 100%;
+  height: 56px;
   top: 0;
   right: 40px;
   gap: 40px;
@@ -69,14 +70,25 @@ a {
 }
 
 #menu_button {
-  @extend #menu_bar;
+  @extend .menu_bar;
+
   height: 32px;
   width: 32px;
 }
 
 #menu_list{
-  color: red;
-  //TODO: style list
+  @extend .menu_bar;
+
+  flex-direction: column;
+  align-items: flex-end;
+  justify-self: unset;
+
+  gap: 2px;
+  top: 80px;
+  height: fit-content;
+
+  padding-top: 0;
+  padding-bottom: 8px;
 }
 
 .main_page {
