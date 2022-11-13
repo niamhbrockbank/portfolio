@@ -13,9 +13,7 @@ export default function Intro(): JSX.Element {
             src={photo}
             alt="Niamh Brockbank generated using Stable Diffusion"
             onMouseEnter={() => setPhoto("../img/IMG_2919_Original 2.jpeg")}
-            onMouseLeave={() =>
-              setTimeout(() => setPhoto("../img/IMG_7976.jpeg"), 100)
-            }
+            onMouseLeave={() => setPhoto("../img/IMG_7976.jpeg")}
           ></img>
           <p id="intro_words">
             My name is Niamh Brockbank, I'm a <i>software developer</i> living
