@@ -24,15 +24,15 @@
   transform: scale(0.99);
 }
 
-@media screen and (max-width: 550px){
-    #about {
-        display: grid;
-        grid-template-columns: 0.8fr;
-      }
+@media screen and (max-width: 550px) {
+  #about {
+    display: grid;
+    grid-template-columns: 0.8fr;
+  }
 
-    #profile_photo{
-        visibility: hidden;
-    }
+  #profile_photo {
+    visibility: hidden;
+  }
 }
 
 button {
