@@ -4,7 +4,7 @@ import ProjectPage from "./components/ProjectPage/ProjectPage";
 import projectsArchive from "./projectsArchive.json";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Work from "./components/Work";
+import Work from "./components/Work/Work";
 import About from "./components/About";
 
 function App(): JSX.Element {

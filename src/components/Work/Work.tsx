@@ -1,5 +1,6 @@
-import { Project } from "../types";
-import ProjectsSection from "./Home/ProjectsSection";
+import { Project } from "../../types";
+import ProjectsSection from "./ProjectsSection";
+import './Work.scss'
 
 interface IProps {
     projectsArchive: Project[];

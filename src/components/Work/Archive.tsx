@@ -10,7 +10,8 @@ export default function Archive({
 }: ArchiveProps): JSX.Element {
   return (
     <>
-      <h1 id="archive">Projects Archive</h1>
+      <h1 id="archive">WORK</h1>
+      <p className="description">This is a showcase of the projects that I am most proud of. It is a mixture of front end full-stack projects. I am always learning to use new technologies.</p>
       <ul id="archive_list">
         {projectsArchive.map((project) => (
           // <Link to={`/${project.id}`} key={project.id}>
