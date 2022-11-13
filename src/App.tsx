@@ -30,6 +30,10 @@ function App(): JSX.Element {
           path="/contact"
           //element={<Contact />}
         />
+        <Route
+          path="*"
+          element={<Home />}
+        />
       </Routes>
       <Footer />
     </>
