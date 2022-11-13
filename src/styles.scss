@@ -22,7 +22,7 @@ h1 {
   padding: 20px 0 0 0px;
 }
 
-h2{
+h2 {
   @extend h1;
   padding: 0;
   font-size: 1.2em;
@@ -57,19 +57,18 @@ a {
   background-color: #f9f9f5;
 
   list-style-type: none;
-  
-  li{
+
+  li {
     text-align: center;
     min-width: 0;
   }
 
-  a:hover{
+  a:hover {
     border-bottom: 1.5px solid #41423e;
   }
-  
 }
 
-#menu_button{
+#menu_button {
   @extend #menu_bar;
   height: 32px;
   width: 32px;
@@ -112,14 +111,14 @@ a {
 }
 
 @media screen and (min-width: 300px) {
-  #profile_photo{
-    visibility : hidden;
+  #profile_photo {
+    visibility: hidden;
   }
 }
 
 @media screen and (min-width: 600px) {
-  #profile_photo{
-    visibility : visible;
+  #profile_photo {
+    visibility: visible;
   }
 }
 
@@ -300,7 +299,6 @@ a {
   list-style-type: none;
   padding-left: 0px;
 }
-
 
 .pre {
   border: 1px solid #999;
