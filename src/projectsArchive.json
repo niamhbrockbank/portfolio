@@ -53,7 +53,7 @@
     "name": "pastebin",
     "description": "A full-stack code paste bin that retains formatting of pasted code.",
     "date_created": "today",
-    "tags": ["PERN", "TypeScript", "Bootstrap", "Express"],
+    "tags": ["PERN", "Bootstrap", "Express"],
     "objectives": ["Create a PERN full-stack app", "Use Bootstrap for styling"],
     "back_end": {
       "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-W10-Niamh-Salman-Backend",
