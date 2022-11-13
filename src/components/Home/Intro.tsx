@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function IntroSection(): JSX.Element {
+export default function Intro(): JSX.Element {
   const [photo, setPhoto] = useState("../img/IMG_7976.jpeg");
 
   return (
