@@ -6,11 +6,6 @@ colour palette
 #41423e body text colours (dark grey)
 */
 
-@font-face {
-  font-family: courier;
-  src: url(https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap);
-}
-
 body {
   font-family: "UI sans serif", sans-serif;
   font-weight: 100;
@@ -145,6 +140,18 @@ a {
 
 #profile_photo:hover {
   transform: scale(0.99);
+}
+
+@media screen and (min-width: 300px) {
+  #profile_photo{
+    visibility : hidden;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #profile_photo{
+    visibility : visible;
+  }
 }
 
 #featured {
