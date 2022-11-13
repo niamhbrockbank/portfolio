@@ -1,0 +1,115 @@
+.page_description {
+  width: 50%;
+}
+
+#project_list {
+  margin-top: 32px;
+  list-style-type: none;
+  padding-left: 0px;
+  gap: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .project {
+    border: 1px solid #41423e;
+    background-color: #41423e;
+    border-radius: 10px;
+
+    max-width: 480px;
+    // min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  #project_list {
+    .project {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+}
+
+.project:hover {
+  transform: scale(1.01);
+}
+
+#archive_project_details {
+  /* overflow: hidden; */
+  display: grid;
+  color: #f9f9f5;
+  margin: 0px;
+  padding: 10px max(10px, 1.5vw) 0px max(10px, 1.5vw);
+  border-radius: 0px 0px 7px 7px;
+}
+
+.archive_project_title {
+  padding-top: 10px;
+}
+
+.archive_project_title,
+.archive_project_description {
+  margin: 0px;
+}
+
+.archive_project_title {
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.archive_project_description {
+  font-size: 1em;
+  /* overflow: hidden; */
+  /* height: 60px; */
+}
+
+.tags_div {
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: calc(100% - max(20%, 95px)) max(20%, 95px);
+  /* overflow: hidden; */
+  align-items: center;
+  /* height: 90px; */
+}
+
+.tags {
+  /* margin-bottom: 25px; */
+  height: 1.15em;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  row-gap: 6px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.tag {
+  font-size: min(1em, 12pt);
+  /* height: 1.25em; */
+  border: 1px solid #f9f9f5;
+  padding: 1px 10px;
+  border-radius: 3px;
+}
+
+.project_links {
+  margin-top: 15px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.project_link {
+  margin: 0px 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
