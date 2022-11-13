@@ -18,12 +18,17 @@
     border-radius: 10px;
 
     max-width: 480px;
-    // min-height: 200px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project {
+    min-height: 240px;
   }
 }
 
