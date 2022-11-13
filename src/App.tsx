@@ -18,14 +18,14 @@ function App(): JSX.Element {
           path="/work"
           element={<Work projectsArchive={projectsArchive} />}
         />
-        <Route
+        {/* <Route
           path="/work/:id"
           element={<ProjectPage projectsArchive={projectsArchive} />}
-        />{" "}
+        />{" "} */}
         {/* TODO: Change project pages to /work/:id or /:name */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Home />} />
+        {/* <Route path="*" element={<Home />} /> */}
       </Routes>
       {/* <Footer /> */}
     </>
