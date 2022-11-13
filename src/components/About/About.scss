@@ -24,7 +24,7 @@
   transform: scale(0.99);
 }
 
-@media screen and (min-width: 550px){
+@media screen and (max-width: 550px){
     #about {
         display: grid;
         grid-template-columns: 0.8fr;
@@ -40,9 +40,9 @@ button {
   background-color: #f9f9f5;
   color: #41423e;
   border-radius: 10px;
-  height: 2.5rem;
+  height: 2rem;
   width: 80%;
-  font-size: 1.2rem;
+  font-size: inherit;
 }
 
 button:hover {
