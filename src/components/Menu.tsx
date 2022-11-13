@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-export default function MenuBar(): JSX.Element {
+export default function Menu(): JSX.Element {
   const [showMenu, setShowMenu] = useState(false)
   const isSmallScreen = useMediaQuery({ query: "(max-width: 900px)" });
   const menuOptions = ["home", "work", "about", "contact"];

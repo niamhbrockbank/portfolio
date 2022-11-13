@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import MenuBar from "./components/MenuBar";
+import Menu from "./components/Menu";
 import "./styles.scss";
 import ProjectPage from "./components/ProjectPage/ProjectPage";
 import projectsArchive from "./projectsArchive.json";
@@ -9,7 +9,7 @@ import Home from "./components/Home/Home";
 function App(): JSX.Element {
   return (
     <>
-      <MenuBar />
+      <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
