@@ -1,4 +1,3 @@
-import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import "./styles.scss";
 import ProjectPage from "./components/ProjectPage/ProjectPage";
@@ -36,7 +35,7 @@ function App(): JSX.Element {
           element={<Home />}
         />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
