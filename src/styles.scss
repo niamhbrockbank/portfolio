@@ -12,7 +12,7 @@ body {
   color: #41423e;
   background-color: #f9f9f5;
   margin: 0 30px 30px 30px;
-  padding-top : 200px;
+  padding-top: 200px;
 }
 
 h1 {
@@ -78,7 +78,7 @@ a:hover {
   width: 32px;
 }
 
-#menu_list{
+#menu_list {
   @extend .menu_bar;
 
   flex-direction: column;
