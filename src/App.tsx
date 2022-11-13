@@ -12,9 +12,21 @@ function App(): JSX.Element {
       <MenuBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route 
+          path="/work"
+          // element={<Work />}
+        />
         <Route
-          path="/:id"
+          path="/work/:id"
           element={<ProjectPage projectsArchive={projectsArchive} />}
+        /> {/* TODO: Change project pages to /work/:id or /:name */}
+        <Route
+          path="/about"
+          //element={<About />}
+        />
+        <Route
+          path="/contact"
+          //element={<Contact />}
         />
       </Routes>
       <Footer />
