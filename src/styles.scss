@@ -11,6 +11,7 @@ body {
   font-weight: 100;
   color: #41423e;
   background-color: #f9f9f5;
+  margin: 0 30px 30px 30px;
 }
 
 h1 {
@@ -20,6 +21,11 @@ h1 {
   font-size: 1.4em;
   /* font-size: medium; */
   padding: 20px 0 0 0px;
+}
+
+h2{
+  @extend h1;
+  padding: 0;
 }
 
 h3 {
@@ -34,76 +40,34 @@ a {
   text-decoration: none;
 }
 
-.pre {
-  border: 1px solid #999;
-  page-break-inside: avoid;
-  display: block;
-  padding: 3px 10px 5px;
-  margin: 0 0 10px;
-  font-size: 15px;
-  line-height: 20px;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
-  color: #333333;
-  overflow-y: scroll;
-  max-height: 300px;
-}
-
-.pre code {
-  padding: 0;
-  color: inherit;
-  white-space: pre;
-  white-space: pre-wrap;
-  background-color: transparent;
-  border: 0;
-}
-
 #menu_bar {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-  padding: 30px 10px 20px;
+  justify-content: flex-end;
   align-items: baseline;
-  justify-content: space-between;
-  background-color: #f9f9f5;
+
   position: fixed;
-  width: 100vw;
+  width: 100%;
   top: 0;
-  margin: 0px;
-}
+  right: 40px;
+  gap: 40px;
+  margin: 0;
+  padding-top: 30px;
 
-#menu_list {
-  padding: 0px 70px 0px 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-}
+  background-color: #f9f9f5;
 
-#menu_name {
-  margin: 0px;
-  font-size: 1.2em;
-  padding: 0 50px 0 20px;
-  flex-wrap: nowrap;
-}
+  list-style-type: none;
+  
+  li{
+    text-align: center;
+    min-width: 0;
+  }
 
-.menu_list_option {
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  padding: 0px;
-  font-size: 1.2em;
-}
+  a:hover{
+    border-bottom: 1.5px solid #41423e;
+  }
 
-.menu_list_option:hover {
-  border-bottom: 1.5px solid #41423e;
+  
 }
 
 .main_page {
@@ -330,4 +294,37 @@ a {
 .image_list {
   list-style-type: none;
   padding-left: 0px;
+}
+
+
+.pre {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+  display: block;
+  padding: 3px 10px 5px;
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: #333333;
+  overflow-y: scroll;
+  max-height: 300px;
+}
+
+.pre code {
+  padding: 0;
+  color: inherit;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0;
 }

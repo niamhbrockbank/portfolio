@@ -1,6 +1,6 @@
 import Footer from "./components/Footer";
 import MenuBar from "./components/MenuBar";
-import "./styles.css";
+import "./styles.scss";
 import ProjectPage from "./components/ProjectPage/ProjectPage";
 import projectsArchive from "./projectsArchive.json";
 import { Route, Routes } from "react-router-dom";

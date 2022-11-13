@@ -1,28 +1,12 @@
-import { Link } from "react-router-dom";
-
 export default function MenuBar(): JSX.Element {
+  const menuList = ["home", "work", "about", "contact"]
+
   return (
     <>
       <ul id="menu_bar">
-        <Link to="/">
-          <li id="menu_name">Niamh Brockbank</li>
-        </Link>
-        <div id="menu_list">
-          {/* <li className="menu_list_option">
-            <a href="/#featured">FEATURED</a>
-          </li> */}
-          <li className="menu_list_option">
-            <a href="/#archive">ARCHIVE</a>
-          </li>
-          <li className="menu_list_option">
-            <a href="#info">INFO</a>
-          </li>
-          <li className="menu_list_option">
-            <a href="./Brockbank_Niamh_CV_221104.pdf" target="_blank">
-              CV
-            </a>
-          </li>
-        </div>
+        {menuList.map((option, i) => {
+          return <li key={i}><h2><a href={`/${option !== "home" ? option : ""}`}>{option.toUpperCase()}</a></h2></li>
+        })}
       </ul>
     </>
   );
