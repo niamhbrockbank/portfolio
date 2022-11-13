@@ -15,7 +15,7 @@ export default function MenuBar(): JSX.Element {
       : 
       <ul id="menu_bar">
         {menuOptions.map((option, i) => {
-          return <li key={i}><h2><a href={`/${option !== "home" ? option : ""}`}>{option.toUpperCase()}</a></h2></li>
+          return <li key={i}><h2><a href={`/${option !== "home" ? option : ""}`}>{option}</a></h2></li>
         })}
       </ul>
       }
