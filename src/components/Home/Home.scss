@@ -1,8 +1,6 @@
   #home {
     display: flex;
     flex-direction: column;
-    //TODO: deal with low height windows (add a margin-top?)
-    justify-content: center;
 
     width: 65%;
     height: 90vh;
