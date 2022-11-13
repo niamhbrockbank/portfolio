@@ -6,6 +6,7 @@ import projectsArchive from "./projectsArchive.json";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Work from "./components/Work";
+import About from "./components/About";
 
 function App(): JSX.Element {
   return (
@@ -24,7 +25,7 @@ function App(): JSX.Element {
         {/* TODO: Change project pages to /work/:id or /:name */}
         <Route
           path="/about"
-          //element={<About />}
+          element={<About />}
         />
         <Route
           path="/contact"
