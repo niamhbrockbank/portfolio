@@ -19,13 +19,13 @@ h1 {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 1.4em;
-  /* font-size: medium; */
   padding: 20px 0 0 0px;
 }
 
 h2{
   @extend h1;
   padding: 0;
+  font-size: 1.2em;
 }
 
 h3 {
@@ -66,8 +66,13 @@ a {
   a:hover{
     border-bottom: 1.5px solid #41423e;
   }
-
   
+}
+
+#menu_button{
+  @extend #menu_bar;
+  height: 32px;
+  width: 32px;
 }
 
 .main_page {
