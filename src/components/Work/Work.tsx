@@ -1,8 +1,7 @@
 // import { Link } from "react-router-dom";
 import { Project } from "../../types";
 import "./Work.scss";
-import projectsArchive from "../../projectsArchive.json";
-//TODO: import projects archive directly here
+import projects from "../../projects.json";
 
 //TODO: change all function component props to IProps
 
@@ -16,7 +15,7 @@ export default function Work(): JSX.Element {
         new technologies.
       </p>
       <ul id="project_list">
-        {projectsArchive.map((project) => (
+        {projects.map((project) => (
           // <Link to={`/${project.id}`} key={project.id}>
           <li
             className="project"
