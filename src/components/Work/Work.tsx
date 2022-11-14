@@ -1,14 +1,7 @@
-// import { Link } from "react-router-dom";
-import { Project } from "../../types";
 import "./Work.scss";
-//TODO: import projects archive directly here
+import projects from "../../projects.json";
 
-//TODO: change all function component props to IProps
-interface IProps {
-  projectsArchive: Project[];
-}
-
-export default function Work({ projectsArchive }: IProps): JSX.Element {
+export default function Work(): JSX.Element {
   return (
     <>
       <h1 id="archive">WORK</h1>
@@ -18,13 +11,8 @@ export default function Work({ projectsArchive }: IProps): JSX.Element {
         new technologies.
       </p>
       <ul id="project_list">
-        {projectsArchive.map((project) => (
-          // <Link to={`/${project.id}`} key={project.id}>
-          <li
-            className="project"
-            key={project.id}
-            // style={{ backgroundImage: `url(${project.image})` }}
-          >
+        {projects.map((project) => (
+          <li className="project" key={project.id}>
             <div id="archive_project_details">
               <h2 className="archive_project_title">
                 {project.name.toLowerCase()}
@@ -68,7 +56,6 @@ export default function Work({ projectsArchive }: IProps): JSX.Element {
               </div>
             </div>
           </li>
-          // </Link>
         ))}
       </ul>
     </>

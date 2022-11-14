@@ -1,8 +1,3 @@
-export interface Feature {
-  name: string;
-  link: string;
-}
-
 export interface Project {
   id: number;
   name: string;
