@@ -12,10 +12,7 @@ export default function Work(): JSX.Element {
       </p>
       <ul id="project_list">
         {projects.map((project) => (
-          <li
-            className="project"
-            key={project.id}
-          >
+          <li className="project" key={project.id}>
             <div id="archive_project_details">
               <h2 className="archive_project_title">
                 {project.name.toLowerCase()}
