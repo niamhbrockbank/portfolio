@@ -1,9 +1,5 @@
-// import { Link } from "react-router-dom";
-import { Project } from "../../types";
 import "./Work.scss";
 import projects from "../../projects.json";
-
-//TODO: change all function component props to IProps
 
 export default function Work(): JSX.Element {
   return (
@@ -16,11 +12,9 @@ export default function Work(): JSX.Element {
       </p>
       <ul id="project_list">
         {projects.map((project) => (
-          // <Link to={`/${project.id}`} key={project.id}>
           <li
             className="project"
             key={project.id}
-            // style={{ backgroundImage: `url(${project.image})` }}
           >
             <div id="archive_project_details">
               <h2 className="archive_project_title">
@@ -65,7 +59,6 @@ export default function Work(): JSX.Element {
               </div>
             </div>
           </li>
-          // </Link>
         ))}
       </ul>
     </>

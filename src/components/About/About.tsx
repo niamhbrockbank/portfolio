@@ -5,7 +5,6 @@ import "./About.scss";
 export default function About(): JSX.Element {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 780px)" });
   const [photo, setPhoto] = useState("../img/IMG_7976.jpeg");
-  //TODO: check if is small screen and don't render pfp
 
   return (
     <>
