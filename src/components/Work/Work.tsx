@@ -1,14 +1,12 @@
 // import { Link } from "react-router-dom";
 import { Project } from "../../types";
 import "./Work.scss";
+import projectsArchive from "../../projectsArchive.json";
 //TODO: import projects archive directly here
 
 //TODO: change all function component props to IProps
-interface IProps {
-  projectsArchive: Project[];
-}
 
-export default function Work({ projectsArchive }: IProps): JSX.Element {
+export default function Work(): JSX.Element {
   return (
     <>
       <h1 id="archive">WORK</h1>
