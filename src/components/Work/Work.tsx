@@ -7,7 +7,8 @@ export default function Work(): JSX.Element {
       <h1 id="archive">WORK</h1>
       <p className="page_description_work">
         This is a showcase of the projects that I am most proud of. It is a
-        mixture of front end and full-stack projects. I am passionate about continuous learning and strive to learn new skills every day.
+        mixture of front end and full-stack projects. I am passionate about
+        continuous learning and strive to learn new skills every day.
       </p>
       <ul id="project_list">
         {projects.map((project) => (
