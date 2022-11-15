@@ -3,9 +3,9 @@ import { useMediaQuery } from "react-responsive";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Menu(): JSX.Element {
-  let page = useLocation().pathname.slice(1)
-  if (page === ''){
-    page = 'home'
+  let page = useLocation().pathname.slice(1);
+  if (page === "") {
+    page = "home";
   }
 
   const [showMenu, setShowMenu] = useState(false);
@@ -16,11 +16,11 @@ export default function Menu(): JSX.Element {
     return (
       <li key={i}>
         <h2>
-          {page === option ? 
-          <p style={{borderBottom: '0.1rem solid #41423e'}}>{option}</p>
-          :
-          <Link to={`/${option !== "home" ? option : ""}`}>{option}</Link>
-          }
+          {page === option ? (
+            <p style={{ borderBottom: "0.1rem solid #41423e" }}>{option}</p>
+          ) : (
+            <Link to={`/${option !== "home" ? option : ""}`}>{option}</Link>
+          )}
         </h2>
       </li>
     );
@@ -40,7 +40,11 @@ export default function Menu(): JSX.Element {
             />
           </div>
 
-          {showMenu && <ul id="menu_list" onClick={() => setShowMenu(!showMenu)}>{menuOptionsList}</ul>}
+          {showMenu && (
+            <ul id="menu_list" onClick={() => setShowMenu(!showMenu)}>
+              {menuOptionsList}
+            </ul>
+          )}
         </>
       ) : (
         <ul className="menu_bar">
