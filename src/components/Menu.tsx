@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Menu(): JSX.Element {
   const page = useLocation().pathname.slice(1)
-  console.log(page)
 
   const [showMenu, setShowMenu] = useState(false);
   const isSmallScreen = useMediaQuery({ query: "(max-width: 900px)" });
