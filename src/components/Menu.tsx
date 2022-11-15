@@ -3,7 +3,10 @@ import { useMediaQuery } from "react-responsive";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Menu(): JSX.Element {
-  const page = useLocation().pathname.slice(1)
+  let page = useLocation().pathname.slice(1)
+  if (page === ''){
+    page = 'home'
+  }
 
   const [showMenu, setShowMenu] = useState(false);
   const isSmallScreen = useMediaQuery({ query: "(max-width: 900px)" });
