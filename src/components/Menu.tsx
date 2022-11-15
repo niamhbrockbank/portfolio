@@ -40,7 +40,7 @@ export default function Menu(): JSX.Element {
             />
           </div>
 
-          {showMenu && <ul id="menu_list">{menuOptionsList}</ul>}
+          {showMenu && <ul id="menu_list" onClick={() => setShowMenu(!showMenu)}>{menuOptionsList}</ul>}
         </>
       ) : (
         <ul className="menu_bar">
