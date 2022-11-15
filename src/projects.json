@@ -4,7 +4,7 @@
     "name": "Eisenhower Matrix",
     "description": "An Eisenhower matrix background and the ability to add task notes. The task notes will be draggable so that they can be positioned in the correct quadrant easily.",
     "date_created": "today",
-    "tags": ["Firebase", "Cypress", "PERN"],
+    "tags": ["Firebase", "Cypress", "Socket.io"],
     "objectives": [
       "Learn how to create drag and drop elements",
       "Use styled components",
