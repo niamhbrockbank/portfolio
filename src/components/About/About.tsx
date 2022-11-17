@@ -25,7 +25,7 @@ export default function About(): JSX.Element {
             holistic approaches to problems find the best, most elegant and most
             sustainable solutions.
           </p>
-          <a href="./Brockbank_Niamh_CV_221104.pdf" target="_blank">
+          <a href="./Brockbank_Niamh_CV_221116.pdf" target="_blank">
             <button>MY FULL CV</button>
           </a>
         </div>
