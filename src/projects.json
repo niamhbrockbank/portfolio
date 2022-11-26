@@ -46,18 +46,18 @@
     }
   },
   {
-    "id" : 2,
-    "name" : "sun tracker",
-    "description" : "Front-end app that gives the user the sunrise and sunset times for their location.",
-    "date_created" : "today",
-    "tags" : ["Front-end", "TypeScript", "CSS"],
-    "objectives" : [
+    "id": 2,
+    "name": "sun tracker",
+    "description": "Front-end app that gives the user the sunrise and sunset times for their location.",
+    "date_created": "today",
+    "tags": ["Front-end", "TypeScript", "CSS"],
+    "objectives": [
       "Use fetch to query multiple APIs",
       "Conditionally render sunlight left"
     ],
-    "front_end" : {
-      "github_link" : "https://github.com/niamhbrockbank/sunrise-sunset",
-      "deployed_link" : "https://sunrise-sunset-nb.netlify.app/"
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/sunrise-sunset",
+      "deployed_link": "https://sunrise-sunset-nb.netlify.app/"
     }
   }
 ]
