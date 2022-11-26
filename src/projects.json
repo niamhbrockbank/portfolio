@@ -30,25 +30,6 @@
     }
   },
   {
-    "id": 12,
-    "name": "resources sharer",
-    "description": "An app that users can 'sign in' to using a dropdown bar and add learning resources to share with their peers. Each user can add resources to their study-list which is available to view on a different page.",
-    "date_created": "today",
-    "tags": ["PERN", "Express", "Bootstrap"],
-    "objectives": [],
-    "front_end": {
-      "github_link": "https://github.com/Wilrosmi/C5C1-frontend",
-      "deployed_link": "https://c5c1-frontend.netlify.app"
-    },
-    "back_end": {
-      "github_link": "https://github.com/Wilrosmi/C5C1-backend",
-      "deployed_link": "https://c5c1-backend.herokuapp.com/",
-      "table_schema": [
-        "DROP TABLE IF EXISTS build_stage CASCADE;\n      DROP TABLE IF EXISTS resource_likes CASCADE;\n      DROP TABLE IF EXISTS comment_likes CASCADE;\n      DROP TABLE IF EXISTS comments CASCADE;\n      DROP TABLE IF EXISTS likes CASCADE;\n      DROP TABLE IF EXISTS recommendation_state CASCADE;\n      DROP TABLE IF EXISTS resources CASCADE;\n      DROP TABLE IF EXISTS resource_tags CASCADE;\n      DROP TABLE IF EXISTS study_list CASCADE;\n      DROP TABLE IF EXISTS tags CASCADE;\n      DROP TABLE IF EXISTS users CASCADE;\n\n      CREATE TABLE tags\n      (\n        tag_name VARCHAR(255) PRIMARY KEY\n      );\n      \n      CREATE TABLE users\n      (\n        user_id SERIAL PRIMARY KEY,\n        name VARCHAR(255),\n        is_faculty BOOLEAN\n      );\n      \n      CREATE TABLE build_stage \n      (\n        stage_name VARCHAR(255) PRIMARY KEY\n      );\n      \n      CREATE TABLE recommendation_state\n      (\n        opinion VARCHAR(255),\n        PRIMARY KEY (opinion)\n      );\n      \n      \n      CREATE TABLE resources\n      (\n        resource_id SERIAL PRIMARY KEY,\n        resource_name VARCHAR(255),\n        author_name VARCHAR(255),\n        url VARCHAR(2048) UNIQUE,\n        description VARCHAR(500),\n        content_type VARCHAR(255),\n        build_stage VARCHAR(255),\n        time_date TIMESTAMP DEFAULT NOW(),\n        opinion VARCHAR(255),\n        opinion_reason VARCHAR(255),\n        user_id INTEGER,\n      \n        CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(user_id),\n        CONSTRAINT fk_build_stage FOREIGN KEY(build_stage) REFERENCES build_stage(stage_name),\n        CONSTRAINT fk_recommendation FOREIGN KEY(opinion) REFERENCES recommendation_state(opinion)\n      );\n      \n      CREATE TABLE resource_tags \n      (\n        resource_id INTEGER,\n        tag_name VARCHAR(255),\n        \n        CONSTRAINT fk_resource FOREIGN KEY(resource_id) REFERENCES resources(resource_id) ON DELETE CASCADE,\n        CONSTRAINT fk_tag FOREIGN KEY(tag_name) REFERENCES tags(tag_name),\n        \n        PRIMARY KEY(resource_id, tag_name)\n      );\n      \n      CREATE TABLE comments \n      (\n        comment_id SERIAL PRIMARY KEY,\n        resource_id INTEGER,\n        comment_body VARCHAR(500),\n        user_id INTEGER,\n        time_date TIMESTAMP DEFAULT NOW(),\n      \n        CONSTRAINT fk_resource FOREIGN KEY(resource_id) REFERENCES resources(resource_id) on delete cascade,\n        CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(user_id)\n      );\n      \n      CREATE TABLE study_list\n      (\n        user_id INTEGER,\n        resource_id INTEGER,\n      \n        PRIMARY KEY(user_id, resource_id)\n      );\n      \n      CREATE TABLE resource_likes\n      (\n        resource_id INTEGER,\n        user_id INTEGER,\n        liked BOOLEAN,\n      \n        PRIMARY KEY(user_id, resource_id),\n        \n        CONSTRAINT fk_resource FOREIGN KEY (resource_id) \n          REFERENCES resources(resource_id) ON DELETE CASCADE,\n        CONSTRAINT fk_user FOREIGN KEY (user_id) \n          REFERENCES users(user_id) ON DELETE CASCADE\n      );\n      \n      CREATE TABLE comment_likes\n      (\n        comment_id INTEGER,\n        user_id INTEGER,\n        liked BOOLEAN,\n        PRIMARY KEY(comment_id, user_id),\n      \n        CONSTRAINT fk_comment FOREIGN KEY (comment_id) \n          REFERENCES comments(comment_id) ON DELETE CASCADE,\n        CONSTRAINT fk_user FOREIGN KEY (user_id)\n          REFERENCES users(user_id) ON DELETE CASCADE\n      );"
-      ]
-    }
-  },
-  {
     "id": 11,
     "name": "pastebin",
     "description": "A full-stack code paste bin that retains formatting of pasted code.",
@@ -65,18 +46,18 @@
     }
   },
   {
-    "id": 2,
-    "name": "tv show picker",
-    "description": "Front-end app that fetches tv show data from an API. User can navigate between shows with a dropdown and filter shows and episodes using a search bar.",
-    "date_created": "today",
-    "tags": ["Front-end", "TypeScript", "CSS"],
-    "objectives": [
-      "Use fetch to query an API",
-      "Use React hook to manage states"
+    "id" : 2,
+    "name" : "sun tracker",
+    "description" : "Front-end app that gives the user the sunrise and sunset times for their location.",
+    "date_created" : "today",
+    "tags" : ["Front-end", "TypeScript", "CSS"],
+    "objectives" : [
+      "Use fetch to query multiple APIs",
+      "Conditionally render sunlight left"
     ],
-    "front_end": {
-      "github_link": "https://github.com/Wilrosmi/tv-shows",
-      "deployed_link": "https://will-niamh-tv-shows.netlify.app/"
+    "front_end" : {
+      "github_link" : "https://github.com/niamhbrockbank/sunrise-sunset",
+      "deployed_link" : "https://sunrise-sunset-nb.netlify.app/"
     }
   }
 ]
