@@ -37,12 +37,12 @@
     "tags": ["PERN", "Bootstrap", "Express"],
     "objectives": ["Create a PERN full-stack app", "Use Bootstrap for styling"],
     "back_end": {
-      "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-W10-Niamh-Salman-Backend",
-      "deployed_link": "https://bluewhale-pastebin.herokuapp.com/"
+      "github_link": "https://github.com/niamhbrockbank/paste-bin-backend",
+      "deployed_link": "https://paste-bin-nb.onrender.com/"
     },
     "front_end": {
-      "github_link": "https://github.com/Salman0112358/Paste-Bin-Project-Niamh-Salman-Frontend",
-      "deployed_link": "https://paste-bin-blue-whale-projects.netlify.app/"
+      "github_link": "https://github.com/niamhbrockbank/paste-bin",
+      "deployed_link": "https://paste-bin-nb.netlify.app/"
     }
   },
   {
