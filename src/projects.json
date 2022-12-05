@@ -59,5 +59,20 @@
       "github_link": "https://github.com/niamhbrockbank/sunrise-sunset",
       "deployed_link": "https://sunrise-sunset-nb.netlify.app/"
     }
+  },
+  {
+    "id" : 1,
+    "name" : "study resources sharer",
+    "description" : "Browse study resources, log in and add them to your study list.",
+    "date_created" : "today",
+    "tags" : ["PERN", "Cypress", "CSS"],
+    "objectives" : [
+      "Login with Firebase, to show a user their study list",
+      "Use CSS animations and transitions"
+    ],
+    "front_end" : {
+      "github_link" : "https://github.com/niamhbrockbank/resource-sharer",
+      "deployed_link" : "https://resource-sharer.netlify.app/"
+    }
   }
 ]
