@@ -11,7 +11,7 @@ export default function Contact(): JSX.Element {
         <a href="https://www.linkedin.com/in/niamh-brockbank/">
           LinkedIn
         </a> / <a href="https://github.com/niamhbrockbank">GitHub</a> /{" "}
-        <a href="https://discordapp.com/users/872920095180075038">Discord</a>
+        <a href="https://discordapp.com/users/872920095180075038">Discord</a> /{" "}
         <a href="https://openprocessing.org/user/334108/">OpenProcessing</a>
       </p>
     </>
