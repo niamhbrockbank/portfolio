@@ -74,5 +74,20 @@
       "github_link": "https://github.com/niamhbrockbank/resource-sharer",
       "deployed_link": "https://resource-sharer.netlify.app/"
     }
+  },
+  {
+    "id": 3,
+    "name": "what's on page",
+    "description": "Browse what's on at the arena from a list fetched from an API.",
+    "date_created": "today",
+    "tags": ["Next.js", "Jest", "SASS"],
+    "objectives": [
+      "Create interesting CSS animations",
+      "Use CSS variables and media queries to build light and dark modes"
+    ],
+    "front_end": {
+      "github_link": "https://github.com/niamhbrockbank/nic-motorpoint-arena",
+      "deployed_link": "https://nic-motorpoint-arena.vercel.app/"
+    }
   }
 ]
