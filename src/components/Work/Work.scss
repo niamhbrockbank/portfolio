@@ -1,3 +1,14 @@
+:root{
+  --background : #f9f9f5;
+  --accent : #41423e;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --background: #41423e;
+    --accent: #f9f9f5;
+  }
+}
 .page_description_work {
   width: 50%;
 }
@@ -13,8 +24,8 @@
   justify-content: flex-start;
 
   .project {
-    border: 1px solid #41423e;
-    background-color: #41423e;
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
     border-radius: 10px;
 
     max-width: 480px;
@@ -48,7 +59,7 @@
 #archive_project_details {
   /* overflow: hidden; */
   display: grid;
-  color: #f9f9f5;
+  color: var(--background);
   margin: 0px;
   padding: 10px max(10px, 1.5vw) 0px max(10px, 1.5vw);
   border-radius: 0px 0px 7px 7px;
@@ -100,7 +111,7 @@
 .tag {
   font-size: min(1em, 12pt);
   /* height: 1.25em; */
-  border: 1px solid #f9f9f5;
+  border: 1px solid var(--background);
   padding: 1px 10px;
   border-radius: 3px;
 }

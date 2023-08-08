@@ -3,14 +3,26 @@ colour palette
 #686963 dim gray
 
 #f9f9f5 background-colour (off-white)
-#41423e body text colours (dark grey)
+var(--accent) body text colours (dark grey)
 */
+:root{
+  --background : #f9f9f5;
+  --accent : #41423e;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --background: #41423e;
+    --accent: #f9f9f5;
+  }
+}
+
 
 body {
   font-family: "UI sans serif", sans-serif;
   font-weight: 100;
-  color: #41423e;
-  background-color: #f9f9f5;
+  color: var(--accent);
+  background-color: var(--background);
   margin: 0 30px 30px 30px;
   padding-top: 20vh;
 }
@@ -42,7 +54,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 0.1rem solid #41423e;
+  border-bottom: 0.1rem solid var(--accent);
 }
 
 .menu_bar {
@@ -62,7 +74,7 @@ a:hover {
   padding-right: 48px;
   margin-right: -48px;
 
-  background-color: #f9f9f5;
+  background-color: var(--background);
 
   list-style-type: none;
 

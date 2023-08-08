@@ -1,3 +1,15 @@
+:root{
+  --background : #f9f9f5;
+  --accent : #41423e;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --background: #41423e;
+    --accent: #f9f9f5;
+  }
+}
+
 #about {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
@@ -36,9 +48,9 @@
 }
 
 button {
-  border: 1px solid #41423e;
-  background-color: #f9f9f5;
-  color: #41423e;
+  border: 1px solid var(--accent);
+  background-color: var(--background);
+  color: var(--accent);
   border-radius: 10px;
   height: 2rem;
   width: 80%;
@@ -46,6 +58,6 @@ button {
 }
 
 button:hover {
-  background-color: #41423e;
-  color: #f9f9f5;
+  background-color: var(--accent);
+  color: var(--background);
 }
