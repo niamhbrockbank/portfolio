@@ -5,18 +5,17 @@ colour palette
 #f9f9f5 background-colour (off-white)
 var(--accent) body text colours (dark grey)
 */
-:root{
-  --background : #f9f9f5;
-  --accent : #41423e;
+:root {
+  --background: #f9f9f5;
+  --accent: #41423e;
 }
 
-@media (prefers-color-scheme: dark){
-  :root{
+@media (prefers-color-scheme: dark) {
+  :root {
     --background: #41423e;
     --accent: #f9f9f5;
   }
 }
-
 
 body {
   font-family: "UI sans serif", sans-serif;

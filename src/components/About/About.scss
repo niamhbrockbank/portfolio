@@ -1,10 +1,10 @@
-:root{
-  --background : #f9f9f5;
-  --accent : #41423e;
+:root {
+  --background: #f9f9f5;
+  --accent: #41423e;
 }
 
-@media (prefers-color-scheme: dark){
-  :root{
+@media (prefers-color-scheme: dark) {
+  :root {
     --background: #41423e;
     --accent: #f9f9f5;
   }

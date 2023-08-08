@@ -17,7 +17,9 @@ export default function Menu(): JSX.Element {
       <li key={i}>
         <h2>
           {page === option ? (
-            <p style={{ borderBottom: "0.1rem solid var(--accent)" }}>{option}</p>
+            <p style={{ borderBottom: "0.1rem solid var(--accent)" }}>
+              {option}
+            </p>
           ) : (
             <Link to={`/${option !== "home" ? option : ""}`}>{option}</Link>
           )}
