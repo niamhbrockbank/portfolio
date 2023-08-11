@@ -1,11 +1,6 @@
-import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
 import "./About.scss";
 
 export default function About(): JSX.Element {
-  const isSmallScreen = useMediaQuery({ query: "(max-width: 780px)" });
-  const [photo, setPhoto] = useState("../img/IMG_7976.jpeg");
-
   return (
     <>
       <h1>About</h1>
@@ -29,15 +24,6 @@ export default function About(): JSX.Element {
             <button>MY FULL CV</button>
           </a>
         </div>
-        {!isSmallScreen && (
-          <img
-            id="profile_photo"
-            src={photo}
-            alt="Niamh Brockbank generated using Stable Diffusion"
-            onMouseEnter={() => setPhoto("../img/IMG_2919_Original 2.jpeg")}
-            onMouseLeave={() => setPhoto("../img/IMG_7976.jpeg")}
-          ></img>
-        )}
       </div>
     </>
   );

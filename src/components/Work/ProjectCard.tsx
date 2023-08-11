@@ -1,3 +1,4 @@
+import { BoxArrowUpRight, Github } from "react-bootstrap-icons";
 import { Project } from "../../types";
 
 interface IProps {
@@ -28,20 +29,16 @@ export default function ProjectCard({ project }: IProps): JSX.Element {
 
             <div className="project_links">
               {project.front_end?.deployed_link !== "undefined" && (
-                <img
+                <BoxArrowUpRight
                   className="project_link"
-                  src="./img/box-arrow-up-right.svg"
-                  alt="link to deployed project"
                   onClick={() =>
                     window.open(project.front_end?.deployed_link, "_blank")
                   }
                 />
               )}
               {project.front_end?.github_link !== "undefined" && (
-                <img
+                <Github
                   className="project_link"
-                  src="./img/github.svg"
-                  alt="link to github repo"
                   onClick={() =>
                     window.open(project.front_end?.github_link, "_blank")
                   }
