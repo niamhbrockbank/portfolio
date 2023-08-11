@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: IProps): JSX.Element {
                 />
               )}
               {project.front_end?.github_link !== "undefined" && (
-                <Github 
+                <Github
                   className="project_link"
                   onClick={() =>
                     window.open(project.front_end?.github_link, "_blank")
