@@ -128,4 +128,8 @@
   margin: 0px 10px;
   padding-bottom: 10px;
   cursor: pointer;
+
+  svg{
+    fill: var(--background);
+  }
 }
